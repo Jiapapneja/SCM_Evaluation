@@ -1,4 +1,5 @@
 **AttendEase - Attendance Counter Portal**
+
 AttendEase is a simple and efficient attendance management web application designed for educational institutions. It allows teachers to input daily attendance and enables students to check their individual attendance records in real-time. Built with clarity and usability in mind, AttendEase streamlines the attendance tracking process for both educators and learners.
 
 **Features**
