@@ -10,6 +10,7 @@ Snapdish is a modern and user-friendly recipe discovery web application that hel
    Enter what you have in your kitchen, and Snapdish suggests recipes you can make.
    
 **Tech Stack**
+
 Frontend:
 HTML5, CSS3, JavaScript (Vanilla)
 
