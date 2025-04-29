@@ -1,20 +1,13 @@
-**AttendEase - Attendance Counter Portal**
-
-AttendEase is a simple and efficient attendance management web application designed for educational institutions. It allows teachers to input daily attendance and enables students to check their individual attendance records in real-time. Built with clarity and usability in mind, AttendEase streamlines the attendance tracking process for both educators and learners.
+**Snapdish**
+Snapdish is a modern and user-friendly recipe discovery web application that helps users find delicious recipes quickly and easily. Whether you're cooking with limited ingredients or exploring new cuisines, Snapdish makes meal planning and preparation effortless. Built with simplicity and performance in mind, Snapdish enhances the cooking experience for food lovers of all levels.
 
 **Features**
-1. Role-based Login System
-Teachers and students access the portal with different roles and functionalities.
+1. Smart Search Engine
+    Find recipes by ingredient, name, or cuisine with a fast, intuitive search.
 
-2. Teacher Dashboard
-Easily input and manage attendance records for multiple students.
-
-3. Student Portal
-View attendance status by entering a roll number.
-
-4. Dynamic Table
-Displays attendance sorted by roll number for organized tracking.
-
+2. Ingredient-Based Discovery
+   Enter what you have in your kitchen, and Snapdish suggests recipes you can make.
+   
 **Tech Stack**
 Frontend:
 HTML5, CSS3, JavaScript (Vanilla)
