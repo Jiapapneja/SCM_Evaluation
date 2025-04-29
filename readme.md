@@ -12,7 +12,7 @@ Snapdish is a modern and user-friendly recipe discovery web application that hel
 **Tech Stack**
 
 Frontend:
-HTML5, CSS3, JavaScript (Vanilla)
+HTML5, CSS3, JavaScript 
 
 **Contributing**
 Contributions are welcome! Feel free to fork the repo and submit a pull request.
