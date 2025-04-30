@@ -1,3 +1,4 @@
+
 **Snapdish**
 
 Snapdish is a modern and user-friendly recipe discovery web application that helps users find delicious recipes quickly and easily. Whether you're cooking with limited ingredients or exploring new cuisines, Snapdish makes meal planning and preparation effortless. Built with simplicity and performance in mind, Snapdish enhances the cooking experience for food lovers of all levels.
