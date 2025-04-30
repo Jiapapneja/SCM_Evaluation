@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('https://example.com/background.jpg'); /* Replace with a URL of a suitable background image */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    background-color: rgba(211, 47, 47, 0.9);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.3em;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.recipe-image img:hover {
+    transform: scale(1.05);
+}
+
+.recipe-info h2 {
+    color: #d32f2f;
+    font-size: 1.8em;
+    margin: 20px 0 10px;
+}
+
+.recipe-info ul, .recipe-info ol {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+.recipe-info li {
+    margin-bottom: 15px;
+}
+
+.recipe-info img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#back-button {
+    padding: 12px 25px;
+    background-color: #d32f2f;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#back-button:hover {
+    background-color: #c12727;
+}
+
+footer {
+    background-color: rgba(211, 47, 47, 0.9);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+}
+
+body{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/800px-Good_Food_Display_-_NCI_Visuals_Online.jpg');
+    
+    background-size: cover; 
+    
+    background-position: center; 
+    
+    background-repeat: no-repeat; 
+    
+    position: relative;
+    
+    background-color: rgba(252, 240, 240, 0.893); 
+    
+    background-blend-mode: overlay;
+    
+    align-content: center;
+    }
