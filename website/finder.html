@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="finder.css">
+    <title>Finder Page</title>
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        <p>Enter your ingredients below to find recipes!</p>
+    </header>
+
+    <div class="cuisine-filters">
+        <button class="cuisine-button">Indian</button>
+        <button class="cuisine-button">Italian</button>
+        <button class="cuisine-button">American</button>
+        <button class="cuisine-button">Vegetarian</button>
+        <button class="cuisine-button">Non-Vegetarian</button>
+    </div>
+
+    <div class="search-section">
+        <input type="text" id="search-bar" placeholder="Enter ingredients (comma separated)">
+        <button id="search-button">Find Recipes</button>
+    </div>
+
+    <div class="recipe-suggestions">
+        <h2>Search Results</h2>
+        <div class="recipe-grid" id="recipe-grid"></div>
+    </div>
+
+    <script src="finder.js"></script>
+</body>
+</html>
