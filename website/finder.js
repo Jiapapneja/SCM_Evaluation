@@ -134,6 +134,15 @@ const recipes = [
         image: "https://sharethespice.com/wp-content/uploads/2024/02/Paneer-Tikka-Featured.jpg", // Replace with actual image URL
         description: "Marinated paneer cubes grilled with vegetables, served with mint chutney."
     },
+    { 
+        name: "Veggie Burger", 
+        ingredients: ["burger buns", "veggie patty", "lettuce", "tomato", "onion", "ketchup"], 
+        cuisine: "American", 
+        type: "Vegetarian", 
+        image: "https://images.app.goo.gl/7FpSdy2nnPb9aA7q7", 
+        description: "A healthy and hearty burger with a plant-based patty and fresh vegetables." 
+    },
+    
 
 ];
 
