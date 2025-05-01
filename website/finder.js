@@ -21,7 +21,7 @@ const recipes = [
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GthicQwTiXV0M8mopHLJb04RX9mYhbEYyb4HMrXHA&s", // Replace with actual image URL
         description: "Fluffy pancakes served with syrup and butter."
     },
-    { 
+    {
         name: "Chicken Curry", 
         ingredients: ["chicken", "onion", "garlic", "tomato", "spices"], 
         cuisine: "Indian", 
@@ -115,7 +115,7 @@ const recipes = [
         ingredients: ["vegetables", "pav bread", "spices", "butter"], 
         cuisine: "Indian", 
         type: "Vegetarian", 
-        image: "https://bhojmasale.com/cdn/shop/articles/YFL-Pav-Bhaji-2_8a51cfbd-f4ff-4ee8-81e6-90831eaa304d_1024x1024.webp?v=1719038943", // Replace with actual image URL
+        image: "https://bhomasale.com/cdn/shop/articles/YFL-Pav-Bhaji-2_8a51cfbd-f4ff-4ee8-81e6-90831eaa304d_1024x1024.webp?v=1719038943", // Replace with actual image URL
         description: "A spicy vegetable mash served with buttered bread rolls."
     },
     { 
