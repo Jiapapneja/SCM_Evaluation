@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('https://example.com/background.jpg'); /* Replace with your actual background image URL */
+    background-image: url('https://static.toiimg.com/thumb/64029527.cms?width=1200&height=900'); /* Replace with your actual background image URL */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the image */
     color: #444; /* Dark grey text for better readability */
@@ -16,7 +16,22 @@ body {
     justify-content: center; /* Center children vertically */
     min-height: 100vh; /* Full viewport height */
     padding: 20px; /* Add some padding */
+    position: relative; /* Important for overlay */
+    z-index: 0;
 }
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Light overlay */
+    backdrop-filter: blur(3px); /* Optional: adds subtle blur */
+    z-index: -1; /* Place it behind the content */
+  }
+  
 
 header {
     background-color: rgba(255, 69, 58, 0.9); /* Semi-transparent background */
