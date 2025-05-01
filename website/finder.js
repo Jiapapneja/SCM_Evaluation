@@ -150,6 +150,16 @@ const recipes = [
         image: "https://www.recipetineats.com/wp-content/uploads/2018/01/Mushroom-Risotto_4.jpg", 
         description: "Creamy risotto cooked slowly with earthy mushrooms and a touch of parmesan." 
     },
+    { 
+        name: "Aloo Gobi", 
+        ingredients: ["potatoes", "cauliflower", "tomatoes", "onion", "spices", "cilantro"], 
+        cuisine: "Indian", 
+        type: "Vegetarian", 
+        image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/aloo-gobi.jpg", 
+        description: "A spiced Indian dish made with potatoes and cauliflower, often served with roti or rice." 
+    },
+    
+    
     
     
 
