@@ -158,11 +158,14 @@ const recipes = [
         image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/aloo-gobi.jpg", 
         description: "A spiced Indian dish made with potatoes and cauliflower, often served with roti or rice." 
     },
-    
-    
-    
-    
-
+    { 
+        name: "Avocado Toast", 
+        ingredients: ["bread", "avocado", "lemon juice", "salt", "pepper", "chili flakes"], 
+        cuisine: "American", 
+        type: "Vegetarian", 
+        image: "https://www.loveandlemons.com/wp-content/uploads/2020/02/avocado-toast.jpg", 
+        description: "Toasted bread topped with mashed avocado, seasoning, and optional toppings like chili flakes or seeds." 
+    },
 ];
 
 // Function to find and display recipes based on input
