@@ -142,6 +142,15 @@ const recipes = [
         image: "https://images.app.goo.gl/7FpSdy2nnPb9aA7q7", 
         description: "A healthy and hearty burger with a plant-based patty and fresh vegetables." 
     },
+    { 
+        name: "Mushroom Risotto", 
+        ingredients: ["arborio rice", "mushrooms", "vegetable broth", "onion", "parmesan", "garlic"], 
+        cuisine: "Italian", 
+        type: "Vegetarian", 
+        image: "https://www.recipetineats.com/wp-content/uploads/2018/01/Mushroom-Risotto_4.jpg", 
+        description: "Creamy risotto cooked slowly with earthy mushrooms and a touch of parmesan." 
+    },
+    
     
 
 ];
