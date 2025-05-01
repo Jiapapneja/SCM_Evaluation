@@ -166,6 +166,14 @@ const recipes = [
         image: "https://www.loveandlemons.com/wp-content/uploads/2020/02/avocado-toast.jpg", 
         description: "Toasted bread topped with mashed avocado, seasoning, and optional toppings like chili flakes or seeds." 
     },
+    { 
+        name: "Tomato Basil Soup", 
+        ingredients: ["tomatoes", "onion", "garlic", "vegetable broth", "basil", "cream"], 
+        cuisine: "American", 
+        type: "Vegetarian", 
+        image: "https://www.simplyrecipes.com/thmb/9f_cHOs6kMNdq1HbpHo82ZyU6Gs=/2000x1333/filters:fill(auto,1)/Simply-Recipes-Tomato-Soup-LEAD-1-b8f4f4041c134365be4f4bdf6bd26bdc.jpg", 
+        description: "A creamy, comforting soup made with ripe tomatoes and fresh basil, perfect with grilled cheese." 
+    },
 ];
 
 // Function to find and display recipes based on input
