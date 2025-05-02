@@ -115,7 +115,7 @@ const recipes = [
         ingredients: ["vegetables", "pav bread", "spices", "butter"], 
         cuisine: "Indian", 
         type: "Vegetarian", 
-        image: "https://bhojmasale.com/cdn/shop/articles/YFL-Pav-Bhaji-2_8a51cfbd-f4ff-4ee8-81e6-90831eaa304d_1024x1024.webp?v=1719038943", // Replace with actual image URL
+        image: "https://images.app.goo.gl/ayFBYDoM4cqq8cr19", // Replace with actual image URL
         description: "A spicy vegetable mash served with buttered bread rolls."
     },
     { 
