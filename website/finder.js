@@ -116,6 +116,7 @@ const recipes = [
         cuisine: "Indian", 
         type: "Vegetarian", 
         image: "images/Instant-Pot-Mumbai-Pav-Bhaji-Recipe.jpg", // Replace with actual image URL
+
         description: "A spicy vegetable mash served with buttered bread rolls."
     },
     { 
