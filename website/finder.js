@@ -486,7 +486,16 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/green-bean-casserole.jpg",
         "description": "A comforting holiday dish made with green beans and a creamy mushroom sauce, topped with crispy onions."
-      }
+      },
+      {
+        "name": "Coleslaw",
+        "ingredients": ["cabbage", "carrots", "mayonnaise", "vinegar", "sugar", "salt", "pepper"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/coleslaw.jpg",
+        "description": "A crunchy, creamy salad made with shredded cabbage and carrots, perfect for picnics or BBQs."
+      },
+    
     
     
 ];
