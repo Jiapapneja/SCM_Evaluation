@@ -479,14 +479,7 @@ const recipes = [
         "image": "images/18290-garlic-mashed-potatoes-ddmfs-beauty2-4x3-0327-2-47384a10cded40ae90e574bc7fdb9433.jpg",
         "description": "Creamy and smooth mashed potatoes, a staple side dish in American meals."
       },
-      {
-        "name": "Green Bean Casserole",
-        "ingredients": ["green beans", "mushroom soup", "fried onions", "milk", "pepper"],
-        "cuisine": "American",
-        "type": "Vegetarian",
-        "image": "images/green-bean-casserole.jpg",
-        "description": "A comforting holiday dish made with green beans and a creamy mushroom sauce, topped with crispy onions."
-      },
+
       {
         "name": "Coleslaw",
         "ingredients": ["cabbage", "carrots", "mayonnaise", "vinegar", "sugar", "salt", "pepper"],
@@ -520,14 +513,6 @@ const recipes = [
         "description": "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
       },
       {
-        "name": "Eggplant Parmesan",
-        "ingredients": ["eggplant", "breadcrumbs", "tomato sauce", "mozzarella", "parmesan", "basil"],
-        "cuisine": "Italian",
-        "type": "Vegetarian",
-        "image": "images/eggplant-parmesan.jpg",
-        "description": "Breaded slices of eggplant baked with layers of tomato sauce and cheese."
-      },
-      {
         "name": "Pesto Pasta",
         "ingredients": ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
         "cuisine": "Italian",
@@ -540,7 +525,7 @@ const recipes = [
         "ingredients": ["lasagna noodles", "zucchini", "spinach", "ricotta", "tomato sauce", "mozzarella", "parmesan"],
         "cuisine": "Italian",
         "type": "Vegetarian",
-        "image": "images/vegetable-lasagna.jpg",
+        "image": "images/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
         "description": "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
       },
       {
@@ -548,7 +533,7 @@ const recipes = [
         "ingredients": ["dosa batter", "potatoes", "onion", "mustard seeds", "curry leaves"],
         "cuisine": "Indian",
         "type": "Vegetarian",
-        "image": "images/masala-dosa.jpg",
+        "image": "images/masala-dosa-recipe.jpg",
         "description": "Crispy fermented rice crepe filled with spicy mashed potatoes, served with chutney and sambar."
       },
       {
@@ -556,7 +541,7 @@ const recipes = [
         "ingredients": ["basmati rice", "mixed vegetables", "spices", "yogurt", "saffron"],
         "cuisine": "Indian",
         "type": "Vegetarian",
-        "image": "images/vegetable-biryani.jpg",
+        "image": "images/Vegetable-Biryani-Instant-Pot-Piping-Pot-Curry-4.jpg",
         "description": "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
       },
       {
@@ -564,7 +549,7 @@ const recipes = [
         "ingredients": ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
         "cuisine": "Indian",
         "type": "Vegetarian",
-        "image": "images/aloo-paratha.jpg",
+        "image": "images/Aloo-Paratha-4.jpg",
         "description": "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
       }
   
