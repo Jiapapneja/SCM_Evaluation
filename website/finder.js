@@ -462,7 +462,15 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/stuffed-peppers.jpg",
         "description": "Colorful bell peppers stuffed with a flavorful mix of rice, beans, and cheese, then baked to perfection."
+      },
+      {
+        "name": "Cornbread",
+        "ingredients": ["cornmeal", "flour", "baking powder", "milk", "egg", "butter", "sugar"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/cornbread.jpg",
+        "description": "A slightly sweet, moist cornbread often served with chili or barbecue dishes."
       }
-    
+        
     
 ];
