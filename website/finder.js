@@ -542,6 +542,14 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/vegetable-lasagna.jpg",
         "description": "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
+      },
+      {
+        "name": "Masala Dosa",
+        "ingredients": ["dosa batter", "potatoes", "onion", "mustard seeds", "curry leaves"],
+        "cuisine": "Indian",
+        "type": "Vegetarian",
+        "image": "images/masala-dosa.jpg",
+        "description": "Crispy fermented rice crepe filled with spicy mashed potatoes, served with chutney and sambar."
       }
   
     
