@@ -558,6 +558,14 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/vegetable-biryani.jpg",
         "description": "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
+      },
+      {
+        "name": "Aloo Paratha",
+        "ingredients": ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
+        "cuisine": "Indian",
+        "type": "Vegetarian",
+        "image": "images/aloo-paratha.jpg",
+        "description": "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
       }
   
     
