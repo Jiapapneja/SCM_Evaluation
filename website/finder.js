@@ -452,7 +452,7 @@ const recipes = [
         "ingredients": ["macaroni", "cheddar cheese", "milk", "butter", "flour", "salt"],
     "cuisine": "American",
     "type": "Vegetarian",
-    "image": "images/mac-and-cheese.jpg",
+    "image": "",
     "description": "A rich and creamy baked macaroni and cheese, a classic American comfort food."
     },
     {
@@ -476,7 +476,7 @@ const recipes = [
         "ingredients": ["potatoes", "butter", "milk", "salt", "pepper"],
         "cuisine": "American",
         "type": "Vegetarian",
-        "image": "images/mashed-potatoes.jpg",
+        "image": "images/18290-garlic-mashed-potatoes-ddmfs-beauty2-4x3-0327-2-47384a10cded40ae90e574bc7fdb9433.jpg",
         "description": "Creamy and smooth mashed potatoes, a staple side dish in American meals."
       },
       {
