@@ -455,13 +455,6 @@ const recipes = [
     "image": "images/mac-and-cheese.jpg",
     "description": "A rich and creamy baked macaroni and cheese, a classic American comfort food."
     },
-    {
-        "name": "Grilled Cheese Sandwich",
-        "ingredients": ["bread", "cheddar cheese", "butter"],
-        "cuisine": "American",
-        "type": "Vegetarian",
-        "image": "images/grilled-cheese.jpg",
-        "description": "Crispy on the outside, gooey on the inside—an iconic American sandwich made with melted cheese and toasted bread."
-      }
+  
     
 ];
