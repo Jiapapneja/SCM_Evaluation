@@ -479,14 +479,7 @@ const recipes = [
         "image": "images/18290-garlic-mashed-potatoes-ddmfs-beauty2-4x3-0327-2-47384a10cded40ae90e574bc7fdb9433.jpg",
         "description": "Creamy and smooth mashed potatoes, a staple side dish in American meals."
       },
-      {
-        "name": "Green Bean Casserole",
-        "ingredients": ["green beans", "mushroom soup", "fried onions", "milk", "pepper"],
-        "cuisine": "American",
-        "type": "Vegetarian",
-        "image": "images/green-bean-casserole.jpg",
-        "description": "A comforting holiday dish made with green beans and a creamy mushroom sauce, topped with crispy onions."
-      },
+
       {
         "name": "Coleslaw",
         "ingredients": ["cabbage", "carrots", "mayonnaise", "vinegar", "sugar", "salt", "pepper"],
@@ -518,14 +511,6 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/Caprese-Salad-7b.jpg",
         "description": "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
-      },
-      {
-        "name": "Eggplant Parmesan",
-        "ingredients": ["eggplant", "breadcrumbs", "tomato sauce", "mozzarella", "parmesan", "basil"],
-        "cuisine": "Italian",
-        "type": "Vegetarian",
-        "image": "images/eggplant-parmesan.jpg",
-        "description": "Breaded slices of eggplant baked with layers of tomato sauce and cheese."
       },
       {
         "name": "Pesto Pasta",
