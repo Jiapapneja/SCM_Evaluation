@@ -460,7 +460,7 @@ const recipes = [
         "ingredients": ["bell peppers", "rice", "black beans", "corn", "cheddar cheese", "onion", "tomato"],
         "cuisine": "American",
         "type": "Vegetarian",
-        "image": "images/stuffed-peppers.jpg",
+        "image": "images/southwestern-style-stuffed- bell peppers-1-12.jpg",
         "description": "Colorful bell peppers stuffed with a flavorful mix of rice, beans, and cheese, then baked to perfection."
       },
       {
@@ -500,7 +500,7 @@ const recipes = [
         "ingredients": ["sweet potatoes", "olive oil", "salt", "pepper", "paprika"],
         "cuisine": "American",
         "type": "Vegetarian",
-        "image": "images/sweet-potato-fries.jpg",
+        "image": "images/Sweet-Potato-Wedges-17.jpg",
         "description": "Crispy and slightly sweet baked fries that are a healthier twist on a classic side."
       },
       {
@@ -508,7 +508,7 @@ const recipes = [
         "ingredients": ["baguette", "tomatoes", "garlic", "basil", "olive oil", "salt"],
         "cuisine": "Italian",
         "type": "Vegetarian",
-        "image": "images/bruschetta.jpg",
+        "image": "images/bruschetta-recipe-1.jpg",
         "description": "Grilled bread rubbed with garlic and topped with fresh chopped tomatoes and basil."
       },
       {
@@ -516,7 +516,7 @@ const recipes = [
         "ingredients": ["tomatoes", "mozzarella", "basil", "olive oil", "balsamic vinegar", "salt", "pepper"],
         "cuisine": "Italian",
         "type": "Vegetarian",
-        "image": "images/caprese-salad.jpg",
+        "image": "images/Caprese-Salad-7b.jpg",
         "description": "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
       },
       {
@@ -532,7 +532,7 @@ const recipes = [
         "ingredients": ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
         "cuisine": "Italian",
         "type": "Vegetarian",
-        "image": "images/pesto-pasta.jpg",
+        "image": "images/Basil-Pesto-Thumbnail-500x500.jpg",
         "description": "A simple, aromatic pasta dish tossed in fresh basil pesto and topped with parmesan and pine nuts."
       },
        {
