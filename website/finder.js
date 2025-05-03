@@ -447,4 +447,12 @@ const recipes = [
         image: "images/tomato-basil-soup.jpg", 
         description: "A creamy, comforting soup made with ripe tomatoes and fresh basil, perfect with grilled cheese." 
     },
+    {
+        "name": "Mac and Cheese",
+    "ingredients": ["macaroni", "cheddar cheese", "milk", "butter", "flour", "salt"],
+    "cuisine": "American",
+    "type": "Vegetarian",
+    "image": "images/mac-and-cheese.jpg",
+    "description": "A rich and creamy baked macaroni and cheese, a classic American comfort food."
+    }
 ];
