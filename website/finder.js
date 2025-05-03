@@ -495,6 +495,14 @@ const recipes = [
         "image": "images/coleslaw.jpg",
         "description": "A crunchy, creamy salad made with shredded cabbage and carrots, perfect for picnics or BBQs."
       },
+      {
+        "name": "Baked Sweet Potato Fries",
+        "ingredients": ["sweet potatoes", "olive oil", "salt", "pepper", "paprika"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/sweet-potato-fries.jpg",
+        "description": "Crispy and slightly sweet baked fries that are a healthier twist on a classic side."
+      }
     
     
     
