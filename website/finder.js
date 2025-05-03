@@ -535,6 +535,14 @@ const recipes = [
         "image": "images/pesto-pasta.jpg",
         "description": "A simple, aromatic pasta dish tossed in fresh basil pesto and topped with parmesan and pine nuts."
       },
+       {
+        "name": "Vegetable Lasagna",
+        "ingredients": ["lasagna noodles", "zucchini", "spinach", "ricotta", "tomato sauce", "mozzarella", "parmesan"],
+        "cuisine": "Italian",
+        "type": "Vegetarian",
+        "image": "images/vegetable-lasagna.jpg",
+        "description": "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
+      }
   
     
 ];
