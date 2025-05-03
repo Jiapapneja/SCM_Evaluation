@@ -1,7 +1,278 @@
-document.getElementById("search-button").addEventListener("click", function () {
-    let searchQuery = document.getElementById("search-bar").value;
-    findRecipes(searchQuery);
+document.addEventListener("DOMContentLoaded", function() {
+    // Initialize with welcome message
+    displayWelcomeMessage();
+    
+    // Search button functionality
+    document.getElementById("search-button").addEventListener("click", function() {
+        const searchQuery = document.getElementById("search-bar").value;
+        if (searchQuery.trim() === '') {
+            displayWelcomeMessage();
+            return;
+        }
+        findRecipes(searchQuery);
+    });
+
+    // Clear button functionality
+    document.getElementById("clear-button").addEventListener("click", function() {
+        document.getElementById("search-bar").value = '';
+        displayWelcomeMessage();
+    });
+
+    // Cuisine filter buttons
+    document.querySelectorAll('.cuisine-button').forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            document.querySelectorAll('.cuisine-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            const cuisine = this.textContent;
+            const currentSearch = document.getElementById("search-bar").value;
+            filterRecipes(currentSearch, cuisine);
+        });
+    });
+
+    // Popular tag buttons
+    document.querySelectorAll('.tag-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const ingredients = this.getAttribute('data-ingredients');
+            document.getElementById("search-bar").value = ingredients;
+            findRecipes(ingredients);
+        });
+    });
+
+    // View saved recipes button
+    document.getElementById("view-saved").addEventListener('click', function() {
+        showSavedRecipes();
+    });
 });
+
+// Function to display welcome message
+function displayWelcomeMessage() {
+    const recipeGrid = document.getElementById("recipe-grid");
+    recipeGrid.innerHTML = `
+        <div class="welcome-message">
+            <i class="fas fa-utensils"></i>
+            <p>Start by entering ingredients or selecting a cuisine</p>
+        </div>
+    `;
+}
+
+// Function to find recipes based on ingredients (your existing function with improvements)
+function findRecipes(query) {
+    const recipeGrid = document.getElementById("recipe-grid");
+    const loader = document.getElementById("loader");
+    
+    recipeGrid.innerHTML = '';
+    loader.style.display = 'block';
+
+    setTimeout(() => {
+        const searchIngredients = query.toLowerCase().split(',').map(ingredient => ingredient.trim());
+
+        const filteredRecipes = recipes.filter(recipe =>
+            searchIngredients.every(ingredient =>
+                recipe.ingredients.some(recIng => recIng.toLowerCase().includes(ingredient))
+            )
+        );
+
+        loader.style.display = 'none';
+        
+        if (filteredRecipes.length > 0) {
+            filteredRecipes.forEach(recipe => {
+                const card = document.createElement("div");
+                card.className = "recipe-card";
+                card.innerHTML = `
+                    <img src="${recipe.image}" alt="${recipe.name}" onerror="this.src='https://via.placeholder.com/250x200?text=Image+Not+Available'">
+                    <h3>${recipe.name}</h3>
+                    <p>${recipe.description}</p>
+                    <p><strong>Cuisine:</strong> ${recipe.cuisine}</p>
+                    <button class="save-recipe" data-recipe="${recipe.name}">
+                        <i class="far fa-bookmark"></i> Save
+                    </button>
+                `;
+
+                // Add click event to view recipe details
+                card.addEventListener("click", function(e) {
+                    if (!e.target.classList.contains('save-recipe')) {
+                        openRecipeModal(recipe);
+                    }
+                });
+
+                // Add save recipe functionality
+                const saveBtn = card.querySelector('.save-recipe');
+                saveBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    saveRecipe(recipe);
+                });
+
+                recipeGrid.appendChild(card);
+            });
+        } else {
+            recipeGrid.innerHTML = '<p class="no-results">No recipes found. Please try different ingredients.</p>';
+        }
+    }, 500);
+}
+
+// Function to filter recipes by cuisine
+function filterRecipes(query, cuisine) {
+    const recipeGrid = document.getElementById("recipe-grid");
+    const loader = document.getElementById("loader");
+    
+    recipeGrid.innerHTML = '';
+    loader.style.display = 'block';
+
+    setTimeout(() => {
+        let filteredRecipes = recipes;
+        
+        // Filter by ingredients if search query exists
+        if (query) {
+            const searchIngredients = query.toLowerCase().split(',').map(ingredient => ingredient.trim());
+            filteredRecipes = filteredRecipes.filter(recipe =>
+                searchIngredients.every(ingredient =>
+                    recipe.ingredients.some(recIng => recIng.toLowerCase().includes(ingredient))
+                )
+            );
+        }
+        
+        // Filter by cuisine if not "All Cuisines"
+        if (cuisine && cuisine !== "All Cuisines") {
+            filteredRecipes = filteredRecipes.filter(recipe => 
+                recipe.cuisine.toLowerCase() === cuisine.toLowerCase() || 
+                recipe.type.toLowerCase() === cuisine.toLowerCase());
+        }
+
+        loader.style.display = 'none';
+        
+        if (filteredRecipes.length > 0) {
+            filteredRecipes.forEach(recipe => {
+                const card = document.createElement("div");
+                card.className = "recipe-card";
+                card.innerHTML = `
+                    <img src="${recipe.image}" alt="${recipe.name}" onerror="this.src='https://via.placeholder.com/250x200?text=Image+Not+Available'">
+                    <h3>${recipe.name}</h3>
+                    <p>${recipe.description}</p>
+                    <p><strong>Cuisine:</strong> ${recipe.cuisine}</p>
+                    <button class="save-recipe" data-recipe="${recipe.name}">
+                        <i class="far fa-bookmark"></i> Save
+                    </button>
+                `;
+
+                card.addEventListener("click", function(e) {
+                    if (!e.target.classList.contains('save-recipe')) {
+                        openRecipeModal(recipe);
+                    }
+                });
+
+                const saveBtn = card.querySelector('.save-recipe');
+                saveBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    saveRecipe(recipe);
+                });
+
+                recipeGrid.appendChild(card);
+            });
+        } else {
+            recipeGrid.innerHTML = '<p class="no-results">No recipes found for the selected filters.</p>';
+        }
+    }, 500);
+}
+
+// Function to save a recipe
+function saveRecipe(recipe) {
+    let savedRecipes = JSON.parse(localStorage.getItem('savedRecipes')) || [];
+    
+    if (!savedRecipes.some(r => r.name === recipe.name)) {
+        savedRecipes.push(recipe);
+        localStorage.setItem('savedRecipes', JSON.stringify(savedRecipes));
+        alert(`${recipe.name} has been saved to your recipes!`);
+    } else {
+        alert(`${recipe.name} is already in your saved recipes!`);
+    }
+}
+
+// Function to show saved recipes
+function showSavedRecipes() {
+    const savedRecipes = JSON.parse(localStorage.getItem('savedRecipes')) || [];
+    const savedModal = document.getElementById("saved-modal");
+    const savedGrid = document.getElementById("saved-recipes-grid");
+    
+    savedGrid.innerHTML = '';
+    
+    if (savedRecipes.length === 0) {
+        savedGrid.innerHTML = '<p class="empty-message">You haven\'t saved any recipes yet</p>';
+    } else {
+        savedRecipes.forEach(recipe => {
+            const card = document.createElement("div");
+            card.className = "recipe-card";
+            card.innerHTML = `
+                <img src="${recipe.image}" alt="${recipe.name}" onerror="this.src='https://via.placeholder.com/250x200?text=Image+Not+Available'">
+                <h3>${recipe.name}</h3>
+                <p>${recipe.cuisine}</p>
+            `;
+            
+            card.addEventListener("click", function() {
+                openRecipeModal(recipe);
+            });
+            
+            savedGrid.appendChild(card);
+        });
+    }
+    
+    savedModal.style.display = "block";
+}
+
+// Function to open recipe modal (your existing function with improvements)
+function openRecipeModal(recipe) {
+    const modal = document.getElementById("recipe-modal");
+    const modalTitle = document.getElementById("recipe-modal-title");
+    const modalImage = document.getElementById("recipe-modal-img");
+    const modalDescription = document.getElementById("recipe-modal-description");
+    const modalCuisine = document.getElementById("recipe-modal-cuisine");
+    const modalIngredients = document.getElementById("recipe-modal-ingredients");
+
+    modalTitle.textContent = recipe.name;
+    modalImage.src = recipe.image;
+    modalDescription.textContent = recipe.description;
+    modalCuisine.textContent = recipe.cuisine;
+    
+    // Clear previous ingredients and display as list
+    modalIngredients.innerHTML = '';
+    recipe.ingredients.forEach(ingredient => {
+        const li = document.createElement("li");
+        li.textContent = ingredient;
+        modalIngredients.appendChild(li);
+    });
+
+    // Update save button in modal
+    const saveBtn = document.getElementById("save-recipe");
+    saveBtn.onclick = function(e) {
+        e.stopPropagation();
+        saveRecipe(recipe);
+    };
+
+    modal.style.display = "block";
+}
+
+// Close modals (your existing functions with additions)
+document.getElementById("close-modal").addEventListener("click", function() {
+    document.getElementById("recipe-modal").style.display = "none";
+});
+
+document.getElementById("close-saved-modal").addEventListener("click", function() {
+    document.getElementById("saved-modal").style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+    if (event.target == document.getElementById("recipe-modal")) {
+        document.getElementById("recipe-modal").style.display = "none";
+    }
+    if (event.target == document.getElementById("saved-modal")) {
+        document.getElementById("saved-modal").style.display = "none";
+    }
+});
+
 
 // Recipe Array with Images and Descriptions
 const recipes = [
@@ -166,6 +437,7 @@ const recipes = [
         type: "Vegetarian", 
         image: "images/EatingWell-April-Avocado-Toast-Directions-04-5b5b86524a3d4b35ac4c57863f6095dc.jpg", 
         description: "Toasted bread topped with mashed avocado, seasoning, and optional toppings like chili flakes or seeds." 
+
     },
     { 
         name: "Tomato Basil Soup", 
@@ -176,33 +448,3 @@ const recipes = [
         description: "A creamy, comforting soup made with ripe tomatoes and fresh basil, perfect with grilled cheese." 
     },
 ];
-
-// Function to find and display recipes based on input
-function findRecipes(query) {
-    const recipeGrid = document.getElementById("recipe-grid");
-    recipeGrid.innerHTML = ''; // Clear previous results
-    const searchIngredients = query.toLowerCase().split(',').map(ingredient => ingredient.trim());
-    
-    // Filter recipes based on ingredients
-    const filteredRecipes = recipes.filter(recipe => 
-        searchIngredients.every(ingredient => recipe.ingredients.includes(ingredient))
-    );
-
-    // Display filtered recipes
-    if (filteredRecipes.length > 0) {
-        filteredRecipes.forEach(recipe => {
-            const card = document.createElement("div");
-            card.className = "recipe-card";
-            card.innerHTML = `
-                <img src="${recipe.image}" alt="${recipe.name}">
-                <h3>${recipe.name}</h3>
-                <p>${recipe.description}</p>
-                <p><strong>Cuisine:</strong> ${recipe.cuisine}</p>
-                <p><strong>Ingredients:</strong> ${recipe.ingredients.join(', ')}</p>
-            `;
-            recipeGrid.appendChild(card);
-        });
-    } else {
-        recipeGrid.innerHTML = '<p>No recipes found. Please try different ingredients.</p>';
-    }
-}
