@@ -468,7 +468,7 @@ const recipes = [
         "ingredients": ["cornmeal", "flour", "baking powder", "milk", "egg", "butter", "sugar"],
         "cuisine": "American",
         "type": "Vegetarian",
-        "image": "images/cornbread.jpg",
+        "image": "images/Simply-Recipes-Hot-Honey-Cornbread-LEAD-3-5035aac231b6444c96bb31dadbebf511.jpg",
         "description": "A slightly sweet, moist cornbread often served with chili or barbecue dishes."
       },
       {
@@ -485,7 +485,7 @@ const recipes = [
         "ingredients": ["cabbage", "carrots", "mayonnaise", "vinegar", "sugar", "salt", "pepper"],
         "cuisine": "American",
         "type": "Vegetarian",
-        "image": "images/coleslaw.jpg",
+        "image": "images/ALR-222218-nanas-southern-coleslaw-VAT-4x3-d44d1396eb3e47e5b5a9db5a33213c92.jpg",
         "description": "A crunchy, creamy salad made with shredded cabbage and carrots, perfect for picnics or BBQs."
       },
       {
