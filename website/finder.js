@@ -527,5 +527,13 @@ const recipes = [
         "image": "images/eggplant-parmesan.jpg",
         "description": "Breaded slices of eggplant baked with layers of tomato sauce and cheese."
       },
+      {
+        "name": "Pesto Pasta",
+        "ingredients": ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
+        "cuisine": "Italian",
+        "type": "Vegetarian",
+        "image": "images/pesto-pasta.jpg",
+        "description": "A simple, aromatic pasta dish tossed in fresh basil pesto and topped with parmesan and pine nuts."
+      }
     
 ];
