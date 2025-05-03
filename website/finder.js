@@ -470,7 +470,15 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/cornbread.jpg",
         "description": "A slightly sweet, moist cornbread often served with chili or barbecue dishes."
+      },
+      {
+        "name": "Mashed Potatoes",
+        "ingredients": ["potatoes", "butter", "milk", "salt", "pepper"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/mashed-potatoes.jpg",
+        "description": "Creamy and smooth mashed potatoes, a staple side dish in American meals."
       }
-        
+    
     
 ];
