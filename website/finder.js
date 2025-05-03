@@ -452,7 +452,7 @@ const recipes = [
         "ingredients": ["macaroni", "cheddar cheese", "milk", "butter", "flour", "salt"],
     "cuisine": "American",
     "type": "Vegetarian",
-    "image": "",
+    "image": "images/mac-and-cheese-skillet-trivet.jpg",
     "description": "A rich and creamy baked macaroni and cheese, a classic American comfort food."
     },
     {
