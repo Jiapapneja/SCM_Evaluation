@@ -550,6 +550,14 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/masala-dosa.jpg",
         "description": "Crispy fermented rice crepe filled with spicy mashed potatoes, served with chutney and sambar."
+      },
+      {
+        "name": "Vegetable Biryani",
+        "ingredients": ["basmati rice", "mixed vegetables", "spices", "yogurt", "saffron"],
+        "cuisine": "Indian",
+        "type": "Vegetarian",
+        "image": "images/vegetable-biryani.jpg",
+        "description": "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
       }
   
     
