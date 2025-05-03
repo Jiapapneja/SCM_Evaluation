@@ -449,10 +449,124 @@ const recipes = [
     },
     {
         "name": "Mac and Cheese",
-    "ingredients": ["macaroni", "cheddar cheese", "milk", "butter", "flour", "salt"],
+        "ingredients": ["macaroni", "cheddar cheese", "milk", "butter", "flour", "salt"],
     "cuisine": "American",
     "type": "Vegetarian",
     "image": "images/mac-and-cheese.jpg",
     "description": "A rich and creamy baked macaroni and cheese, a classic American comfort food."
-    }
+    },
+    {
+        "name": "Stuffed Bell Peppers",
+        "ingredients": ["bell peppers", "rice", "black beans", "corn", "cheddar cheese", "onion", "tomato"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/stuffed-peppers.jpg",
+        "description": "Colorful bell peppers stuffed with a flavorful mix of rice, beans, and cheese, then baked to perfection."
+      },
+      {
+        "name": "Cornbread",
+        "ingredients": ["cornmeal", "flour", "baking powder", "milk", "egg", "butter", "sugar"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/cornbread.jpg",
+        "description": "A slightly sweet, moist cornbread often served with chili or barbecue dishes."
+      },
+      {
+        "name": "Mashed Potatoes",
+        "ingredients": ["potatoes", "butter", "milk", "salt", "pepper"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/mashed-potatoes.jpg",
+        "description": "Creamy and smooth mashed potatoes, a staple side dish in American meals."
+      },
+      {
+        "name": "Green Bean Casserole",
+        "ingredients": ["green beans", "mushroom soup", "fried onions", "milk", "pepper"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/green-bean-casserole.jpg",
+        "description": "A comforting holiday dish made with green beans and a creamy mushroom sauce, topped with crispy onions."
+      },
+      {
+        "name": "Coleslaw",
+        "ingredients": ["cabbage", "carrots", "mayonnaise", "vinegar", "sugar", "salt", "pepper"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/coleslaw.jpg",
+        "description": "A crunchy, creamy salad made with shredded cabbage and carrots, perfect for picnics or BBQs."
+      },
+      {
+        "name": "Baked Sweet Potato Fries",
+        "ingredients": ["sweet potatoes", "olive oil", "salt", "pepper", "paprika"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/sweet-potato-fries.jpg",
+        "description": "Crispy and slightly sweet baked fries that are a healthier twist on a classic side."
+      },
+      {
+        "name": "Bruschetta",
+        "ingredients": ["baguette", "tomatoes", "garlic", "basil", "olive oil", "salt"],
+        "cuisine": "Italian",
+        "type": "Vegetarian",
+        "image": "images/bruschetta.jpg",
+        "description": "Grilled bread rubbed with garlic and topped with fresh chopped tomatoes and basil."
+      },
+      {
+        "name": "Caprese Salad",
+        "ingredients": ["tomatoes", "mozzarella", "basil", "olive oil", "balsamic vinegar", "salt", "pepper"],
+        "cuisine": "Italian",
+        "type": "Vegetarian",
+        "image": "images/caprese-salad.jpg",
+        "description": "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
+      },
+      {
+        "name": "Eggplant Parmesan",
+        "ingredients": ["eggplant", "breadcrumbs", "tomato sauce", "mozzarella", "parmesan", "basil"],
+        "cuisine": "Italian",
+        "type": "Vegetarian",
+        "image": "images/eggplant-parmesan.jpg",
+        "description": "Breaded slices of eggplant baked with layers of tomato sauce and cheese."
+      },
+      {
+        "name": "Pesto Pasta",
+        "ingredients": ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
+        "cuisine": "Italian",
+        "type": "Vegetarian",
+        "image": "images/pesto-pasta.jpg",
+        "description": "A simple, aromatic pasta dish tossed in fresh basil pesto and topped with parmesan and pine nuts."
+      },
+       {
+        "name": "Vegetable Lasagna",
+        "ingredients": ["lasagna noodles", "zucchini", "spinach", "ricotta", "tomato sauce", "mozzarella", "parmesan"],
+        "cuisine": "Italian",
+        "type": "Vegetarian",
+        "image": "images/vegetable-lasagna.jpg",
+        "description": "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
+      },
+      {
+        "name": "Masala Dosa",
+        "ingredients": ["dosa batter", "potatoes", "onion", "mustard seeds", "curry leaves"],
+        "cuisine": "Indian",
+        "type": "Vegetarian",
+        "image": "images/masala-dosa.jpg",
+        "description": "Crispy fermented rice crepe filled with spicy mashed potatoes, served with chutney and sambar."
+      },
+      {
+        "name": "Vegetable Biryani",
+        "ingredients": ["basmati rice", "mixed vegetables", "spices", "yogurt", "saffron"],
+        "cuisine": "Indian",
+        "type": "Vegetarian",
+        "image": "images/vegetable-biryani.jpg",
+        "description": "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
+      },
+      {
+        "name": "Aloo Paratha",
+        "ingredients": ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
+        "cuisine": "Indian",
+        "type": "Vegetarian",
+        "image": "images/aloo-paratha.jpg",
+        "description": "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
+      }
+  
+    
 ];
