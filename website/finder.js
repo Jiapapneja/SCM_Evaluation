@@ -525,7 +525,7 @@ const recipes = [
         "ingredients": ["lasagna noodles", "zucchini", "spinach", "ricotta", "tomato sauce", "mozzarella", "parmesan"],
         "cuisine": "Italian",
         "type": "Vegetarian",
-        "image": "images/vegetable-lasagna.jpg",
+        "image": "images/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
         "description": "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
       },
       {
@@ -533,7 +533,7 @@ const recipes = [
         "ingredients": ["dosa batter", "potatoes", "onion", "mustard seeds", "curry leaves"],
         "cuisine": "Indian",
         "type": "Vegetarian",
-        "image": "images/masala-dosa.jpg",
+        "image": "images/masala-dosa-recipe.jpg",
         "description": "Crispy fermented rice crepe filled with spicy mashed potatoes, served with chutney and sambar."
       },
       {
@@ -541,7 +541,7 @@ const recipes = [
         "ingredients": ["basmati rice", "mixed vegetables", "spices", "yogurt", "saffron"],
         "cuisine": "Indian",
         "type": "Vegetarian",
-        "image": "images/vegetable-biryani.jpg",
+        "image": "images/Vegetable-Biryani-Instant-Pot-Piping-Pot-Curry-4.jpg",
         "description": "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
       },
       {
@@ -549,7 +549,7 @@ const recipes = [
         "ingredients": ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
         "cuisine": "Indian",
         "type": "Vegetarian",
-        "image": "images/aloo-paratha.jpg",
+        "image": "images/Aloo-Paratha-4.jpg",
         "description": "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
       }
   
