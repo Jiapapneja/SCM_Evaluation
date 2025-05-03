@@ -518,7 +518,14 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/caprese-salad.jpg",
         "description": "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
-      }
-    
+      },
+      {
+        "name": "Eggplant Parmesan",
+        "ingredients": ["eggplant", "breadcrumbs", "tomato sauce", "mozzarella", "parmesan", "basil"],
+        "cuisine": "Italian",
+        "type": "Vegetarian",
+        "image": "images/eggplant-parmesan.jpg",
+        "description": "Breaded slices of eggplant baked with layers of tomato sauce and cheese."
+      },
     
 ];
