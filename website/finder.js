@@ -478,6 +478,14 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/mashed-potatoes.jpg",
         "description": "Creamy and smooth mashed potatoes, a staple side dish in American meals."
+      },
+      {
+        "name": "Green Bean Casserole",
+        "ingredients": ["green beans", "mushroom soup", "fried onions", "milk", "pepper"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/green-bean-casserole.jpg",
+        "description": "A comforting holiday dish made with green beans and a creamy mushroom sauce, topped with crispy onions."
       }
     
     
