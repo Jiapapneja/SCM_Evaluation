@@ -510,6 +510,14 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/bruschetta.jpg",
         "description": "Grilled bread rubbed with garlic and topped with fresh chopped tomatoes and basil."
+      },
+      {
+        "name": "Caprese Salad",
+        "ingredients": ["tomatoes", "mozzarella", "basil", "olive oil", "balsamic vinegar", "salt", "pepper"],
+        "cuisine": "Italian",
+        "type": "Vegetarian",
+        "image": "images/caprese-salad.jpg",
+        "description": "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
       }
     
     
