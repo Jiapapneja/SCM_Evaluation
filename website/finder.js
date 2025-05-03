@@ -18,10 +18,10 @@ const recipes = [
         ingredients: ["flour", "milk", "egg", "butter"], 
         cuisine: "American", 
         type: "Vegetarian", 
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GthicQwTiXV0M8mopHLJb04RX9mYhbEYyb4HMrXHA&s", // Replace with actual image URL
+        image: "images/buttermilk-pancakes.jpg", // Replace with actual image URL
         description: "Fluffy pancakes served with syrup and butter."
     },
-    { 
+    {
         name: "Chicken Curry", 
         ingredients: ["chicken", "onion", "garlic", "tomato", "spices"], 
         cuisine: "Indian", 
@@ -115,7 +115,8 @@ const recipes = [
         ingredients: ["vegetables", "pav bread", "spices", "butter"], 
         cuisine: "Indian", 
         type: "Vegetarian", 
-        image: "https://bhojmasale.com/cdn/shop/articles/YFL-Pav-Bhaji-2_8a51cfbd-f4ff-4ee8-81e6-90831eaa304d_1024x1024.webp?v=1719038943", // Replace with actual image URL
+        image: "images/Instant-Pot-Mumbai-Pav-Bhaji-Recipe.jpg", // Replace with actual image URL
+
         description: "A spicy vegetable mash served with buttered bread rolls."
     },
     { 
@@ -131,7 +132,7 @@ const recipes = [
         ingredients: ["paneer", "yogurt", "spices", "bell pepper", "onion" , "capsicum" , "coriender"], 
         cuisine: "Indian", 
         type: "Vegetarian", 
-        image: "https://sharethespice.com/wp-content/uploads/2024/02/Paneer-Tikka-Featured.jpg", // Replace with actual image URL
+        image: "images/DKT-SPL-INDIAN-GRAVY-Paneer-Do-Pyaza.jpg", // Replace with actual image URL
         description: "Marinated paneer cubes grilled with vegetables, served with mint chutney."
     },
     { 
@@ -139,7 +140,7 @@ const recipes = [
         ingredients: ["burger buns", "veggie patty", "lettuce", "tomato", "onion", "ketchup"], 
         cuisine: "American", 
         type: "Vegetarian", 
-        image: "https://images.app.goo.gl/7FpSdy2nnPb9aA7q7", 
+        image: "images/20231204-SEA-VeganBurger-FredHardy-00-dbf603c78b694bfd99489b85ab44f4c4.jpg", 
         description: "A healthy and hearty burger with a plant-based patty and fresh vegetables." 
     },
     { 
@@ -147,12 +148,33 @@ const recipes = [
         ingredients: ["arborio rice", "mushrooms", "vegetable broth", "onion", "parmesan", "garlic"], 
         cuisine: "Italian", 
         type: "Vegetarian", 
-        image: "https://www.recipetineats.com/wp-content/uploads/2018/01/Mushroom-Risotto_4.jpg", 
+        image: "images/TMD-Mushroom-Risotto-WEB-19.jpg", 
         description: "Creamy risotto cooked slowly with earthy mushrooms and a touch of parmesan." 
     },
-    
-    
-
+    { 
+        name: "Aloo Gobi", 
+        ingredients: ["potatoes", "cauliflower", "tomatoes", "onion", "spices", "cilantro"], 
+        cuisine: "Indian", 
+        type: "Vegetarian", 
+        image: "images/Aloo-Gobi-Piping-Pot-Curry.jpg", 
+        description: "A spiced Indian dish made with potatoes and cauliflower, often served with roti or rice." 
+    },
+    { 
+        name: "Avocado Toast", 
+        ingredients: ["bread", "avocado", "lemon juice", "salt", "pepper", "chili flakes"], 
+        cuisine: "American", 
+        type: "Vegetarian", 
+        image: "images/EatingWell-April-Avocado-Toast-Directions-04-5b5b86524a3d4b35ac4c57863f6095dc.jpg", 
+        description: "Toasted bread topped with mashed avocado, seasoning, and optional toppings like chili flakes or seeds." 
+    },
+    { 
+        name: "Tomato Basil Soup", 
+        ingredients: ["tomatoes", "onion", "garlic", "vegetable broth", "basil", "cream"], 
+        cuisine: "American", 
+        type: "Vegetarian", 
+        image: "images/tomato-basil-soup.jpg", 
+        description: "A creamy, comforting soup made with ripe tomatoes and fresh basil, perfect with grilled cheese." 
+    },
 ];
 
 // Function to find and display recipes based on input
