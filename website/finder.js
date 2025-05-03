@@ -455,6 +455,14 @@ const recipes = [
     "image": "images/mac-and-cheese.jpg",
     "description": "A rich and creamy baked macaroni and cheese, a classic American comfort food."
     },
-  
+    {
+        "name": "Stuffed Bell Peppers",
+        "ingredients": ["bell peppers", "rice", "black beans", "corn", "cheddar cheese", "onion", "tomato"],
+        "cuisine": "American",
+        "type": "Vegetarian",
+        "image": "images/stuffed-peppers.jpg",
+        "description": "Colorful bell peppers stuffed with a flavorful mix of rice, beans, and cheese, then baked to perfection."
+      }
+    
     
 ];
