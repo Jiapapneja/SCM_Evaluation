@@ -502,8 +502,15 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/sweet-potato-fries.jpg",
         "description": "Crispy and slightly sweet baked fries that are a healthier twist on a classic side."
+      },
+      {
+        "name": "Bruschetta",
+        "ingredients": ["baguette", "tomatoes", "garlic", "basil", "olive oil", "salt"],
+        "cuisine": "Italian",
+        "type": "Vegetarian",
+        "image": "images/bruschetta.jpg",
+        "description": "Grilled bread rubbed with garlic and topped with fresh chopped tomatoes and basil."
       }
-    
     
     
 ];
