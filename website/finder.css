@@ -152,7 +152,7 @@ header p {
 
 /* Remove border from icon when button is active */
 .cuisine-button.active .icon {
-     border: none;
+      border: none;
 }
 
 /* === Font Styling for Diet Buttons === */
@@ -234,71 +234,96 @@ header p {
     /* margin-bottom: 15px; */
 }
 
-/* === Surprise Me Button Styles (Added) === */
-#surprise-me-button {
-    background-color: var(--surprise-button-color); /* Vibrant orange */
+/* Container for the button to help with centering */
+.button-container {
+    width: 100%; /* Ensure the container takes full width */
+    text-align: center; /* Center inline/inline-block elements like the button */
+    margin-top: 20px; /* Add some space above the button */
+    margin-bottom: 20px; /* Add some space below the button */
+}
+
+/* Style for the "Feeling adventurous?" button itself */
+/* Using the ID #adventurous-button to target the specific button */
+#adventurous-button {
+    background-color: var(--surprise-button-color); /* Vibrant orange (using your variable) */
     border-color: var(--surprise-button-color-dark); /* Slightly darker orange border */
-    color: var(--light-text); /* White text - This will be the default for content inside */
-    font-weight: bold; /* Make text bold - This will be the default for content inside */
-    padding: 12px 25px; /* Slightly more padding */
-    border-radius: 30px; /* Even more rounded */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
-    transition: all 0.3s ease; /* Smooth transitions for hover effects */
-    cursor: pointer; /* Ensure cursor is pointer */
-    border: none; /* Remove default button border */
-    display: flex; /* Use flex for icon/text alignment */
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
-    font-family: var(--font-main); /* Apply main font */
-    font-size: 1em; /* Match other buttons' font size */
-    white-space: nowrap; /* Prevent text wrap */
-
-    /* --- Centering styles moved here --- */
-    width: fit-content; /* Allows the button to shrink to fit its content */
-    margin: 10px auto; /* Centers the button horizontally and adds 10px vertical margin */
-    /* ---------------------------------- */
+    color: var(--light-text); /* White text (using your variable) */
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    display: inline-block; /* Use inline-block for text-align: center on parent */
+    font-family: var(--font-main); /* Use your main font variable */
+    font-size: 1em;
+    white-space: nowrap;
+    text-decoration: none; /* Remove underline if it were an anchor tag */
 }
 
-/* Style for the "Feeling adventurous?" part */
-/* We are targeting the span with class 'feeling-adventurous' inside the button */
-#surprise-me-button .feeling-adventurous {
-    color: var(--dark-text); /* Example: Use a darker color for contrast */
-    /* font-weight is already bold from the parent button, no need to repeat unless overriding */
-    margin-right: 5px; /* Add some space between "Feeling adventurous?" and the arrow/next part */
-}
-
-/* Style for the arrow icon (assuming a span with class 'arrow-icon') */
-#surprise-me-button .arrow-icon {
-    margin-right: 5px; /* Add space after the arrow icon */
-    /* Add specific icon styling here if needed (e.g., font size, color) */
-}
-
-/* Style for the "Surprise Me!" part (assuming a span with class 'surprise-me') */
-/* This part will inherit most styles from the parent button, but you can add specific overrides here */
-#surprise-me-button .surprise-me {
-    /* Example: If you needed a different color specifically for "Surprise Me!" */
-    /* color: var(--another-color); */
-}
-
-
-#surprise-me-button:hover {
+#adventurous-button:hover {
     background-color: var(--surprise-button-color-dark); /* Darker orange on hover */
     transform: translateY(-3px); /* Lift the button slightly */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
 }
 
-#surprise-me-button:active {
+#adventurous-button:active {
     background-color: var(--surprise-button-color-active); /* Even darker orange when clicked */
     transform: translateY(0); /* Push button down slightly */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow when active */
-    /* Removed centering styles from here */
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow when active */
 }
 
-/* Optional: Style for an icon inside the Surprise Me button (if using <i> tag instead of span for the icon) */
-/* Keeping this in case your existing HTML uses <i> for the arrow/icon */
-#surprise-me-button i {
-    margin-right: 8px; /* Space between icon and text */
-    /* Add any specific icon styling here */
+/* Style for the temporary "Surprise Me!" message */
+#surprise-message {
+    font-size: 2em;
+    color: var(--surprise-button-color); /* Match the button color */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style for the container that will display the random recipe */
+#random-recipes-display {
+    width: 90%; /* Adjust width as needed */
+    max-width: 600px; /* Max width for larger screens */
+    background-color: var(--card-bg); /* Use your card background color variable */
+    padding: 20px;
+    border-radius: var(--border-radius); /* Use your border radius variable */
+    box-shadow: var(--shadow); /* Use your shadow variable */
+    margin: 20px auto; /* Center the display block */
+    text-align: left; /* Align text content to the left */
+}
+
+#random-recipes-display h2 {
+    color: var(--primary-color); /* Use your primary color variable */
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center; /* Center the heading */
+}
+
+/* Styling for the recipe details within the display area */
+#random-recipes-display #recipe-details h3 {
+     color: var(--text-color); /* Use your text color variable */
+     margin-bottom: 10px;
+}
+
+#random-recipes-display #recipe-details p {
+    color: var(--text-color); /* Use your text color variable */
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+#random-recipes-display #recipe-details ul {
+    list-style: disc; /* Use bullet points for ingredients */
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: var(--text-color); /* Use your text color variable */
+}
+
+/* Utility class to hide elements */
+.hidden {
+    display: none;
 }
 
 
@@ -509,10 +534,6 @@ header p {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
     margin-top: 20px;
-}
-
-.saved-recipes-grid .recipe-card {
-    position: relative;
 }
 
 .empty-message {
