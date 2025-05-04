@@ -13,6 +13,11 @@
     /* Added colors for diet icons */
     --veg-icon-color: #4CAF50; /* Green */
     --non-veg-icon-color: #f44336; /* Red */
+
+    /* Added color for the Surprise Me button */
+    --surprise-button-color: #ff9800; /* Orange */
+    --surprise-button-color-dark: #f57c00; /* Darker Orange */
+    --surprise-button-color-active: #ef6c00; /* Even Darker Orange */
 }
 
 /* === GLOBAL RESET === */
@@ -84,50 +89,46 @@ header p {
     max-width: 800px;
 }
 
-/* Button default (inactive) style - Modified to match screenshot inactive state and add flex for icon */
+/* Button default (inactive) style */
 .cuisine-button {
     background-color: #f0f0f0; /* Light grey for inactive state */
-    color: var(--text-color); /* User's text color */
-    border: none; /* No border visible in screenshot */
+    color: var(--text-color);
+    border: none;
     border-radius: 25px;
     padding: 12px 20px;
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s;
-    /* Added for icon alignment */
     display: flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap; /* Prevent text wrap */
-    font-weight: normal; /* Normal weight when inactive */
+    white-space: nowrap;
+    font-weight: normal;
 }
 
-/* User's hover style - kept as is */
+/* User's hover style */
 .cuisine-button:hover {
-    background-color: var(--primary-color-dark); /* User's darker red on hover */
-    transform: scale(1.05); /* User's scale effect on hover */
+    background-color: var(--primary-color-dark);
+    transform: scale(1.05);
 }
 
-/* Active state style - Modified to match screenshot (red, white text, bold) */
+/* Active state style */
 .cuisine-button.active {
-    background-color: var(--primary-color); /* User's primary red for active */
-    color: var(--light-text); /* User's light text color */
-    font-weight: bold; /* Bold text when active */
-    /* Removed transform and box-shadow to match screenshot */
-    /* transform: scale(1.05); */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-    border: none; /* Ensure no border in active state */
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    font-weight: bold;
+    border: none;
 }
 
-/* === Icon Styling (Added) === */
+/* === Icon Styling === */
 .cuisine-button .icon {
     display: inline-block;
-    width: 12px; /* Size of the icon */
-    height: 12px; /* Size of the icon */
-    margin-right: 8px; /* Space between icon and text */
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
     background-color: grey; /* Default grey color */
     border: 1px solid #ccc;
-    flex-shrink: 0; /* Prevent icon from shrinking */
+    flex-shrink: 0;
 }
 
 .cuisine-button .icon.veg-icon {
@@ -140,12 +141,12 @@ header p {
 
 /* Icon color when the respective button is ACTIVE */
 .cuisine-button.active[data-filter-value="vegetarian"] .icon.veg-icon {
-    background-color: var(--veg-icon-color); /* Green when Veg button is active */
+    background-color: var(--veg-icon-color);
     border-color: var(--veg-icon-color);
 }
 
 .cuisine-button.active[data-filter-value="non-vegetarian"] .icon.non-veg-icon {
-    background-color: var(--non-veg-icon-color); /* Red when Non-Veg button is active */
+    background-color: var(--non-veg-icon-color);
     border-color: var(--non-veg-icon-color);
 }
 
@@ -154,11 +155,9 @@ header p {
      border: none;
 }
 
-/* === Font Styling for Diet Buttons (Added) === */
-/* Apply the user's main font to the text within diet buttons */
+/* === Font Styling for Diet Buttons === */
 .cuisine-button[data-filter-type="diet"] {
-    font-family: var(--font-main); /* Use the user's defined font */
-    /* You might need to adjust font-size or other properties here if needed */
+    font-family: var(--font-main);
 }
 
 
@@ -184,7 +183,6 @@ header p {
     border-radius: var(--border-radius);
     outline: none;
     font-size: 1em;
-    /* User's font applied here too */
     font-family: var(--font-main);
 }
 
@@ -204,13 +202,26 @@ header p {
     align-items: center;
     gap: 8px;
     transition: all 0.3s;
-     /* User's font applied here too */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 #search-button:hover, #clear-button:hover {
     background-color: var(--primary-color-dark);
     transform: translateY(-2px);
+}
+
+/* The correct CSS rule for the "Feeling Adventurous?" label text */
+.popular-tags span {
+    font-weight: bold;
+    margin-right: 10px;
+    color: var(--primary-color-dark);
+    font-size: 1.1em;
+    font-family: var(--font-main);
+    /* Enhancements */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.1s ease;
+    display: inline-block;
 }
 
 .popular-tags {
@@ -219,25 +230,69 @@ header p {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    /* Keep user's margin-bottom from original popular-tags if needed, or rely on search-container gap */
+    /* margin-bottom: 15px; */
 }
 
-.popular-tags span {
-    font-weight: bold;
+/* === Surprise Me Button Styles (Added) === */
+#surprise-me-button {
+    background-color: var(--surprise-button-color); /* Vibrant orange */
+    border-color: var(--surprise-button-color-dark); /* Slightly darker orange border */
+    color: var(--light-text); /* White text - This will be the default for content inside */
+    font-weight: bold; /* Make text bold - This will be the default for content inside */
+    padding: 12px 25px; /* Slightly more padding */
+    border-radius: 30px; /* Even more rounded */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    cursor: pointer; /* Ensure cursor is pointer */
+    border: none; /* Remove default button border */
+    display: flex; /* Use flex for icon/text alignment */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    font-family: var(--font-main); /* Apply main font */
+    font-size: 1em; /* Match other buttons' font size */
+    white-space: nowrap; /* Prevent text wrap */
 }
 
-.tag-button {
-    padding: 8px 15px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s;
-     /* User's font applied here too */
-     font-family: var(--font-main);
+/* Style for the "Feeling adventurous?" part */
+/* We are targeting the span with class 'feeling-adventurous' inside the button */
+#surprise-me-button .feeling-adventurous {
+    color: var(--dark-text); /* Example: Use a darker color for contrast */
+    /* font-weight is already bold from the parent button, no need to repeat unless overriding */
+    margin-right: 5px; /* Add some space between "Feeling adventurous?" and the arrow/next part */
 }
 
-.tag-button:hover {
-    background-color: #e0e0e0;
+/* Style for the arrow icon (assuming a span with class 'arrow-icon') */
+#surprise-me-button .arrow-icon {
+    margin-right: 5px; /* Add space after the arrow icon */
+    /* Add specific icon styling here if needed (e.g., font size, color) */
+}
+
+/* Style for the "Surprise Me!" part (assuming a span with class 'surprise-me') */
+/* This part will inherit most styles from the parent button, but you can add specific overrides here */
+#surprise-me-button .surprise-me {
+    /* Example: If you needed a different color specifically for "Surprise Me!" */
+    /* color: var(--another-color); */
+}
+
+
+#surprise-me-button:hover {
+    background-color: var(--surprise-button-color-dark); /* Darker orange on hover */
+    transform: translateY(-3px); /* Lift the button slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+#surprise-me-button:active {
+    background-color: var(--surprise-button-color-active); /* Even darker orange when clicked */
+    transform: translateY(0); /* Push button down slightly */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow when active */
+}
+
+/* Optional: Style for an icon inside the Surprise Me button (if using <i> tag instead of span for the icon) */
+/* Keeping this in case your existing HTML uses <i> for the arrow/icon */
+#surprise-me-button i {
+    margin-right: 8px; /* Space between icon and text */
+    /* Add any specific icon styling here */
 }
 
 /* === LOADER === */
@@ -274,15 +329,13 @@ header p {
 .recipe-suggestions h2 {
     color: var(--primary-color);
     font-size: 1.8em;
-     /* User's font applied here (assuming it matches the diet buttons based on request) */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 .results-count {
     color: var(--text-color);
     font-size: 1em;
-     /* User's font applied here too */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 .recipe-grid {
@@ -297,8 +350,7 @@ header p {
     text-align: center;
     padding: 40px;
     color: var(--text-color);
-     /* User's font applied here too */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 .welcome-message i {
@@ -315,8 +367,7 @@ header p {
     padding: 15px;
     transition: transform 0.3s;
     cursor: pointer;
-     /* User's font applied here too */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 .recipe-card:hover {
@@ -335,16 +386,14 @@ header p {
     color: var(--primary-color);
     font-size: 1.3em;
     margin-bottom: 8px;
-     /* User's font applied here too */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 .recipe-card p {
     font-size: 0.9em;
     color: var(--text-color);
     margin-bottom: 5px;
-     /* User's font applied here too */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 /* === MODAL STYLES === */
@@ -369,8 +418,7 @@ header p {
     width: 90%;
     max-width: 700px;
     position: relative;
-     /* User's font applied here too */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 .modal-image-container {
@@ -436,8 +484,7 @@ header p {
     align-items: center;
     gap: 8px;
     transition: all 0.3s;
-     /* User's font applied here too */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 .save-recipe:hover {
@@ -466,8 +513,7 @@ header p {
     text-align: center;
     padding: 20px;
     color: var(--text-color);
-     /* User's font applied here too */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 /* === FLOATING BUTTON === */
@@ -487,8 +533,7 @@ header p {
     gap: 8px;
     transition: all 0.3s;
     z-index: 90;
-     /* User's font applied here too */
-     font-family: var(--font-main);
+    font-family: var(--font-main);
 }
 
 .floating-button:hover {
@@ -511,7 +556,7 @@ header p {
     }
 
     .search-container {
-        flex-direction: column; /* Corrected from 'center' to 'column' for vertical stacking */
+        flex-direction: column;
         align-items: center;
     }
 
