@@ -552,6 +552,7 @@ const recipes = [
         image: "images/Aloo-Paratha-4.jpg",
         description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
       }
+    
   
     
 ];
