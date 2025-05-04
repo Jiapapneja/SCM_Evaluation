@@ -235,7 +235,7 @@ header p {
 }
 
 /* Container for the button to help with centering */
-.button-container {
+.button-wrapper {
     width: 100%; /* Ensure the container takes full width */
     text-align: center; /* Center inline/inline-block elements like the button */
     margin-top: 20px; /* Add some space above the button */
