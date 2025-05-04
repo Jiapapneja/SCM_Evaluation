@@ -598,7 +598,14 @@ const recipes = [
             "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/shahi-paneer-recipe.jpg",
             "description": "A royal North Indian curry made with paneer cubes in a rich, creamy, and mildly spiced gravy of onions, tomatoes, and cashews."
           },
-          
+          {
+            "name": "Malai Kofta",
+            "ingredients": ["paneer", "potatoes", "cream", "cashew nuts", "tomato", "onion", "spices"],
+            "cuisine": "Indian",
+            "type": "Vegetarian",
+            "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/malai-kofta-recipe.jpg",
+            "description": "Soft paneer and potato balls (koftas) served in a smooth, creamy, and mildly spiced tomato-based gravy."
+          }
       
   
     
