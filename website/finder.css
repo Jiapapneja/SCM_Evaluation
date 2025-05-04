@@ -252,6 +252,11 @@ header p {
     font-family: var(--font-main); /* Apply main font */
     font-size: 1em; /* Match other buttons' font size */
     white-space: nowrap; /* Prevent text wrap */
+
+    /* --- Centering styles moved here --- */
+    width: fit-content; /* Allows the button to shrink to fit its content */
+    margin: 10px auto; /* Centers the button horizontally and adds 10px vertical margin */
+    /* ---------------------------------- */
 }
 
 /* Style for the "Feeling adventurous?" part */
@@ -286,6 +291,7 @@ header p {
     background-color: var(--surprise-button-color-active); /* Even darker orange when clicked */
     transform: translateY(0); /* Push button down slightly */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow when active */
+    /* Removed centering styles from here */
 }
 
 /* Optional: Style for an icon inside the Surprise Me button (if using <i> tag instead of span for the icon) */
@@ -294,6 +300,7 @@ header p {
     margin-right: 8px; /* Space between icon and text */
     /* Add any specific icon styling here */
 }
+
 
 /* === LOADER === */
 .loader {
