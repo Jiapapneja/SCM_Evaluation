@@ -568,6 +568,14 @@ const recipes = [
         "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
         "description": "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
       },
+      {
+        "name": "Chicken Korma",
+        "ingredients": ["chicken", "yogurt", "onion", "garlic", "ginger", "spices"],
+        "cuisine": "Indian",
+        "type": "Non-Vegetarian",
+        "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/06/chicken-korma.jpg",
+        "description": "A rich and flavorful chicken curry cooked in a creamy yogurt-based sauce with aromatic spices."
+      }
       
       
 
