@@ -59,10 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             
             window.print();
+
             
-            // Restore original content
             document.body.innerHTML = originalContent;
             
+
             // Remove the visual feedback
             setTimeout(() => {
                 this.classList.remove('clicked');
