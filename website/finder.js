@@ -448,109 +448,109 @@ const recipes = [
         description: "A creamy, comforting soup made with ripe tomatoes and fresh basil, perfect with grilled cheese." 
     },
     {
-        "name": "Mac and Cheese",
-        "ingredients": ["macaroni", "cheddar cheese", "milk", "butter", "flour", "salt"],
-    "cuisine": "American",
-    "type": "Vegetarian",
-    "image": "images/mac-and-cheese-skillet-trivet.jpg",
-    "description": "A rich and creamy baked macaroni and cheese, a classic American comfort food."
+        name: "Mac and Cheese",
+        ingredients: ["macaroni", "cheddar cheese", "milk", "butter", "flour", "salt"],
+        cuisine: "American",
+        type: "Vegetarian",
+        image: "images/mac-and-cheese-skillet-trivet.jpg",
+        description: "A rich and creamy baked macaroni and cheese, a classic American comfort food."
     },
     {
-        "name": "Stuffed Bell Peppers",
-        "ingredients": ["bell peppers", "rice", "black beans", "corn", "cheddar cheese", "onion", "tomato"],
-        "cuisine": "American",
-        "type": "Vegetarian",
-        "image": "images/southwestern-style-stuffed- bell peppers-1-12.jpg",
-        "description": "Colorful bell peppers stuffed with a flavorful mix of rice, beans, and cheese, then baked to perfection."
+        name: "Stuffed Bell Peppers",
+        ingredients: ["bell peppers", "rice", "black beans", "corn", "cheddar cheese", "onion", "tomato"],
+        cuisine: "American",
+        type: "Vegetarian",
+        image: "images/southwestern-style-stuffed- bell peppers-1-12.jpg",
+        description: "Colorful bell peppers stuffed with a flavorful mix of rice, beans, and cheese, then baked to perfection."
       },
       {
-        "name": "Cornbread",
-        "ingredients": ["cornmeal", "flour", "baking powder", "milk", "egg", "butter", "sugar"],
-        "cuisine": "American",
-        "type": "Vegetarian",
-        "image": "images/Simply-Recipes-Hot-Honey-Cornbread-LEAD-3-5035aac231b6444c96bb31dadbebf511.jpg",
-        "description": "A slightly sweet, moist cornbread often served with chili or barbecue dishes."
+        name: "Cornbread",
+        ingredients: ["cornmeal", "flour", "baking powder", "milk", "egg", "butter", "sugar"],
+        cuisine: "American",
+        type: "Vegetarian",
+        image: "images/Simply-Recipes-Hot-Honey-Cornbread-LEAD-3-5035aac231b6444c96bb31dadbebf511.jpg",
+        description: "A slightly sweet, moist cornbread often served with chili or barbecue dishes."
       },
       {
-        "name": "Mashed Potatoes",
-        "ingredients": ["potatoes", "butter", "milk", "salt", "pepper"],
-        "cuisine": "American",
-        "type": "Vegetarian",
-        "image": "images/18290-garlic-mashed-potatoes-ddmfs-beauty2-4x3-0327-2-47384a10cded40ae90e574bc7fdb9433.jpg",
-        "description": "Creamy and smooth mashed potatoes, a staple side dish in American meals."
+        name: "Mashed Potatoes",
+        ingredients: ["potatoes", "butter", "milk", "salt", "pepper"],
+        cuisine: "American",
+        type: "Vegetarian",
+        image: "images/18290-garlic-mashed-potatoes-ddmfs-beauty2-4x3-0327-2-47384a10cded40ae90e574bc7fdb9433.jpg",
+        description: "Creamy and smooth mashed potatoes, a staple side dish in American meals."
       },
 
       {
-        "name": "Coleslaw",
-        "ingredients": ["cabbage", "carrots", "mayonnaise", "vinegar", "sugar", "salt", "pepper"],
-        "cuisine": "American",
-        "type": "Vegetarian",
-        "image": "images/ALR-222218-nanas-southern-coleslaw-VAT-4x3-d44d1396eb3e47e5b5a9db5a33213c92.jpg",
-        "description": "A crunchy, creamy salad made with shredded cabbage and carrots, perfect for picnics or BBQs."
+        name: "Coleslaw",
+        ingredients: ["cabbage", "carrots", "mayonnaise", "vinegar", "sugar", "salt", "pepper"],
+        cuisine: "American",
+        type: "Vegetarian",
+        image: "images/ALR-222218-nanas-southern-coleslaw-VAT-4x3-d44d1396eb3e47e5b5a9db5a33213c92.jpg",
+        description: "A crunchy, creamy salad made with shredded cabbage and carrots, perfect for picnics or BBQs."
       },
       {
-        "name": "Baked Sweet Potato Fries",
-        "ingredients": ["sweet potatoes", "olive oil", "salt", "pepper", "paprika"],
-        "cuisine": "American",
-        "type": "Vegetarian",
-        "image": "images/Sweet-Potato-Wedges-17.jpg",
-        "description": "Crispy and slightly sweet baked fries that are a healthier twist on a classic side."
+        name: "Baked Sweet Potato Fries",
+        ingredients: ["sweet potatoes", "olive oil", "salt", "pepper", "paprika"],
+        cuisine: "American",
+        type: "Vegetarian",
+        image: "images/Sweet-Potato-Wedges-17.jpg",
+        description: "Crispy and slightly sweet baked fries that are a healthier twist on a classic side."
       },
       {
-        "name": "Bruschetta",
-        "ingredients": ["baguette", "tomatoes", "garlic", "basil", "olive oil", "salt"],
-        "cuisine": "Italian",
-        "type": "Vegetarian",
-        "image": "images/bruschetta-recipe-1.jpg",
-        "description": "Grilled bread rubbed with garlic and topped with fresh chopped tomatoes and basil."
+        name: "Bruschetta",
+        ingredients: ["baguette", "tomatoes", "garlic", "basil", "olive oil", "salt"],
+        cuisine: "Italian",
+        type: "Vegetarian",
+        image: "images/bruschetta-recipe-1.jpg",
+        description: "Grilled bread rubbed with garlic and topped with fresh chopped tomatoes and basil."
       },
       {
-        "name": "Caprese Salad",
-        "ingredients": ["tomatoes", "mozzarella", "basil", "olive oil", "balsamic vinegar", "salt", "pepper"],
-        "cuisine": "Italian",
-        "type": "Vegetarian",
-        "image": "images/Caprese-Salad-7b.jpg",
-        "description": "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
+        name: "Caprese Salad",
+        ingredients: ["tomatoes", "mozzarella", "basil", "olive oil", "balsamic vinegar", "salt", "pepper"],
+        cuisine: "Italian",
+        type: "Vegetarian",
+        image: "images/Caprese-Salad-7b.jpg",
+        description: "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
       },
       {
-        "name": "Pesto Pasta",
-        "ingredients": ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
-        "cuisine": "Italian",
-        "type": "Vegetarian",
-        "image": "images/Basil-Pesto-Thumbnail-500x500.jpg",
-        "description": "A simple, aromatic pasta dish tossed in fresh basil pesto and topped with parmesan and pine nuts."
+        name: "Pesto Pasta",
+        ingredients: ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
+        cuisine: "Italian",
+        type: "Vegetarian",
+        image: "images/Basil-Pesto-Thumbnail-500x500.jpg",
+        description: "A simple, aromatic pasta dish tossed in fresh basil pesto and topped with parmesan and pine nuts."
       },
        {
-        "name": "Vegetable Lasagna",
-        "ingredients": ["lasagna noodles", "zucchini", "spinach", "ricotta", "tomato sauce", "mozzarella", "parmesan"],
-        "cuisine": "Italian",
-        "type": "Vegetarian",
-        "image": "images/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
-        "description": "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
+        name: "Vegetable Lasagna",
+        ingredients: ["lasagna noodles", "zucchini", "spinach", "ricotta", "tomato sauce", "mozzarella", "parmesan"],
+        cuisine: "Italian",
+        type: "Vegetarian",
+        image: "images/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
+        description: "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
       },
       {
-        "name": "Masala Dosa",
-        "ingredients": ["dosa batter", "potatoes", "onion", "mustard seeds", "curry leaves"],
-        "cuisine": "Indian",
-        "type": "Vegetarian",
-        "image": "images/masala-dosa-recipe.jpg",
-        "description": "Crispy fermented rice crepe filled with spicy mashed potatoes, served with chutney and sambar."
+        name: "Masala Dosa",
+        ingredients: ["dosa batter", "potatoes", "onion", "mustard seeds", "curry leaves"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "images/masala-dosa-recipe.jpg",
+        description: "Crispy fermented rice crepe filled with spicy mashed potatoes, served with chutney and sambar."
       },
       {
-        "name": "Vegetable Biryani",
-        "ingredients": ["basmati rice", "mixed vegetables", "spices", "yogurt", "saffron"],
-        "cuisine": "Indian",
-        "type": "Vegetarian",
-        "image": "images/Vegetable-Biryani-Instant-Pot-Piping-Pot-Curry-4.jpg",
-        "description": "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
+        name: "Vegetable Biryani",
+        ingredients: ["basmati rice", "mixed vegetables", "spices", "yogurt", "saffron"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "images/Vegetable-Biryani-Instant-Pot-Piping-Pot-Curry-4.jpg",
+        description: "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
       },
       {
-        "name": "Aloo Paratha",
-        "ingredients": ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
-        "cuisine": "Indian",
-        "type": "Vegetarian",
-        "image": "images/Aloo-Paratha-4.jpg",
-        "description": "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
+        name: "Aloo Paratha",
+        ingredients: ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "images/Aloo-Paratha-4.jpg",
+        description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
       }
   
     
