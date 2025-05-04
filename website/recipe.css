@@ -161,7 +161,7 @@ figcaption {
     object-fit: cover;
 }
 
-/* Buttons */
+
 .action-buttons {
     display: flex;
     justify-content: center;
@@ -216,7 +216,7 @@ figcaption {
     margin-top: 0.5rem;
 }
 
-/* Responsive Design */
+
 @media (min-width: 768px) {
     .recipe-article {
         display: grid;
@@ -251,7 +251,7 @@ figcaption {
         grid-column: 2;
     }
 }
-/* Button click animation */
+
 .btn-primary.clicked, .btn-secondary.clicked {
     transform: scale(0.95);
     opacity: 0.9;
