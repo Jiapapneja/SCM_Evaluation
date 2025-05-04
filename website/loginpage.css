@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #f6f5f7;
+	background: #d2b4f0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -173,6 +173,56 @@ input {
   	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
 }
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Horizontally center */
+    padding: 0 40px;
+    text-align: center; /* Center text alignment */
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Specific styling for the ghost button */
+.ghost {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 45px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px; /* Add some space above the button */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ghost:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure it takes full width */
+    max-width: 300px; /* Optional: set a max width */
+}
+
+.overlay-content h1 {
+    margin-bottom: 15px;
+}
+
+.overlay-content p {
+    margin-bottom: 25px;
+}
 
 .container.right-panel-active .overlay {
   	transform: translateX(50%);
@@ -266,4 +316,4 @@ background-color: rgba(251, 14, 14, 0.174);
 background-blend-mode: overlay;
 
 align-content: center;
-}
+} 
