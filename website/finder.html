@@ -19,8 +19,10 @@
         <button class="cuisine-button" data-cuisine="indian">Indian</button>
         <button class="cuisine-button" data-cuisine="italian">Italian</button>
         <button class="cuisine-button" data-cuisine="american">American</button>
-        <button class="cuisine-button" data-cuisine="vegetarian">Vegetarian</button>
-        <button class="cuisine-button" data-cuisine="non-vegetarian">Non-Vegetarian</button>
+        <button class="cuisine-button" data-cuisine="Veg">Vegetarian</button>
+        <span class="icon Veg-icon"></span>
+        <button class="cuisine-button" data-cuisine="Non-Veg">Non-Vegetarian</button>
+        <span class="icon Non-Veg-icon"></span>
     </div>
 
     <div class="search-section">
@@ -33,12 +35,13 @@
                 <i class="fas fa-times"></i> Clear
             </button>
         </div>
-        <div class="popular-tags">
-            <span>Popular:</span>
-            <button class="tag-button" data-ingredients="chicken,rice">Chicken & Rice</button>
-            <button class="tag-button" data-ingredients="pasta,tomato">Pasta Dishes</button>
-            <button class="tag-button" data-ingredients="eggs,flour">Baking</button>
+        <div class="button-wrapper">
+            <button id="surprise-me-button">
+                <span class="feeling-adventurous">Feeling adventurous?</span>
+                <span class="arrow-icon">→</span> <span class="surprise-me">Surprise Me!</span>
+            </button>
         </div>
+        
     </div>
     
     <div class="loader" id="loader" style="display: none;"></div>
