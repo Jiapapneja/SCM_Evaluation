@@ -559,8 +559,18 @@ const recipes = [
         "type": "Vegetarian",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Eggplant_Parmigiana_%28cropped%29.jpg/640px-Eggplant_Parmigiana_%28cropped%29.jpg",
         "description": "Baked layers of breaded eggplant, tomato sauce, and melted cheese — a comforting Italian classic."
-      }
+      },
+      {
+        "name": "Palak Paneer",
+        "ingredients": ["spinach", "paneer", "onion", "tomato", "garlic", "spices"],
+        "cuisine": "Indian",
+        "type": "Vegetarian",
+        "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
+        "description": "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
+      },
       
+      
+
       
       
 
