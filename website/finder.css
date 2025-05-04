@@ -9,6 +9,10 @@
     --font-main: 'Times New Roman', Times, serif;
     --border-radius: 10px;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    /* Added colors for diet icons */
+    --veg-icon-color: #4CAF50; /* Green */
+    --non-veg-icon-color: #f44336; /* Red */
 }
 
 /* === GLOBAL RESET === */
@@ -80,27 +84,83 @@ header p {
     max-width: 800px;
 }
 
+/* Button default (inactive) style - Modified to match screenshot inactive state and add flex for icon */
 .cuisine-button {
-    background-color: var(--primary-color);
-    color: var(--light-text);
-    border: none;
+    background-color: #f0f0f0; /* Light grey for inactive state */
+    color: var(--text-color); /* User's text color */
+    border: none; /* No border visible in screenshot */
     border-radius: 25px;
     padding: 12px 20px;
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s;
+    /* Added for icon alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap; /* Prevent text wrap */
+    font-weight: normal; /* Normal weight when inactive */
 }
 
+/* User's hover style - kept as is */
 .cuisine-button:hover {
-    background-color: var(--primary-color-dark);
-    transform: scale(1.05);
+    background-color: var(--primary-color-dark); /* User's darker red on hover */
+    transform: scale(1.05); /* User's scale effect on hover */
 }
 
+/* Active state style - Modified to match screenshot (red, white text, bold) */
 .cuisine-button.active {
-    background-color: var(--primary-color-dark);
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color); /* User's primary red for active */
+    color: var(--light-text); /* User's light text color */
+    font-weight: bold; /* Bold text when active */
+    /* Removed transform and box-shadow to match screenshot */
+    /* transform: scale(1.05); */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    border: none; /* Ensure no border in active state */
 }
+
+/* === Icon Styling (Added) === */
+.cuisine-button .icon {
+    display: inline-block;
+    width: 12px; /* Size of the icon */
+    height: 12px; /* Size of the icon */
+    margin-right: 8px; /* Space between icon and text */
+    background-color: grey; /* Default grey color */
+    border: 1px solid #ccc;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.cuisine-button .icon.veg-icon {
+    border-radius: 50%; /* Circle shape for Veg */
+}
+
+.cuisine-button .icon.non-veg-icon {
+    border-radius: 2px; /* Square shape for Non-Veg */
+}
+
+/* Icon color when the respective button is ACTIVE */
+.cuisine-button.active[data-filter-value="vegetarian"] .icon.veg-icon {
+    background-color: var(--veg-icon-color); /* Green when Veg button is active */
+    border-color: var(--veg-icon-color);
+}
+
+.cuisine-button.active[data-filter-value="non-vegetarian"] .icon.non-veg-icon {
+    background-color: var(--non-veg-icon-color); /* Red when Non-Veg button is active */
+    border-color: var(--non-veg-icon-color);
+}
+
+/* Remove border from icon when button is active */
+.cuisine-button.active .icon {
+     border: none;
+}
+
+/* === Font Styling for Diet Buttons (Added) === */
+/* Apply the user's main font to the text within diet buttons */
+.cuisine-button[data-filter-type="diet"] {
+    font-family: var(--font-main); /* Use the user's defined font */
+    /* You might need to adjust font-size or other properties here if needed */
+}
+
 
 /* === SEARCH SECTION === */
 .search-section {
@@ -124,6 +184,8 @@ header p {
     border-radius: var(--border-radius);
     outline: none;
     font-size: 1em;
+    /* User's font applied here too */
+    font-family: var(--font-main);
 }
 
 #search-bar:focus {
@@ -142,6 +204,8 @@ header p {
     align-items: center;
     gap: 8px;
     transition: all 0.3s;
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 #search-button:hover, #clear-button:hover {
@@ -168,6 +232,8 @@ header p {
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s;
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 .tag-button:hover {
@@ -208,11 +274,15 @@ header p {
 .recipe-suggestions h2 {
     color: var(--primary-color);
     font-size: 1.8em;
+     /* User's font applied here (assuming it matches the diet buttons based on request) */
+     font-family: var(--font-main);
 }
 
 .results-count {
     color: var(--text-color);
     font-size: 1em;
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 .recipe-grid {
@@ -227,6 +297,8 @@ header p {
     text-align: center;
     padding: 40px;
     color: var(--text-color);
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 .welcome-message i {
@@ -243,6 +315,8 @@ header p {
     padding: 15px;
     transition: transform 0.3s;
     cursor: pointer;
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 .recipe-card:hover {
@@ -261,12 +335,16 @@ header p {
     color: var(--primary-color);
     font-size: 1.3em;
     margin-bottom: 8px;
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 .recipe-card p {
     font-size: 0.9em;
     color: var(--text-color);
     margin-bottom: 5px;
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 /* === MODAL STYLES === */
@@ -291,6 +369,8 @@ header p {
     width: 90%;
     max-width: 700px;
     position: relative;
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 .modal-image-container {
@@ -356,6 +436,8 @@ header p {
     align-items: center;
     gap: 8px;
     transition: all 0.3s;
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 .save-recipe:hover {
@@ -384,6 +466,8 @@ header p {
     text-align: center;
     padding: 20px;
     color: var(--text-color);
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 /* === FLOATING BUTTON === */
@@ -403,6 +487,8 @@ header p {
     gap: 8px;
     transition: all 0.3s;
     z-index: 90;
+     /* User's font applied here too */
+     font-family: var(--font-main);
 }
 
 .floating-button:hover {
@@ -415,33 +501,33 @@ header p {
     header {
         padding: 20px;
     }
-    
+
     header h1 {
         font-size: 2em;
     }
-    
+
     header p {
         font-size: 1em;
     }
-    
+
     .search-container {
-        flex-direction: center;
+        flex-direction: column; /* Corrected from 'center' to 'column' for vertical stacking */
         align-items: center;
     }
-    
+
     #search-bar {
         width: 100%;
     }
-    
+
     .recipe-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .modal-content {
         width: 95%;
         padding: 20px;
     }
-    
+
     .floating-button {
         bottom: 20px;
         right: 20px;
