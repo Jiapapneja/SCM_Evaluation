@@ -551,15 +551,7 @@ const recipes = [
         "type": "Vegetarian",
         "image": "images/Aloo-Paratha-4.jpg",
         "description": "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
-      },
-      {
-        name: "Margherita Pizza",
-        ingredients: ["pizza dough", "tomato sauce", "mozzarella cheese", "fresh basil"],
-        cuisine: "Italian",
-        type: "Vegetarian",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg",
-        description: "Classic Italian pizza with tomato sauce, mozzarella, and fresh basil leaves."
-    }
+      }
     
   
     
