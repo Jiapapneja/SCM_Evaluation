@@ -418,7 +418,7 @@ const adventurousRecipes = [
               ingredients: ["chicken drumsticks", "BBQ sauce", "paprika", "garlic powder", "brown sugar", "salt", "pepper"],
               cuisine: "American",
               type: "Non-Vegetarian",
-              image: "images/BBQ-Chicken-Drumsticks.jpg",
+              image: "images/BBQ Chicken Drumsticks.jpg",
               description: "Juicy chicken drumsticks coated in a smoky BBQ marinade and baked or grilled until perfectly caramelized and flavorful."
         },
         {
@@ -426,7 +426,7 @@ const adventurousRecipes = [
             ingredients: ["milk powder", "flour", "baking soda", "milk", "ghee", "sugar", "water", "cardamom", "rose water"],
             cuisine: "Indian",
             type: "Dessert",
-            image: "images/Gulab-Jamun.jpg",
+            image: "images/gulab jamun.jpg",
             description: "Soft, round dumplings made from milk solids, deep-fried and soaked in a sweet rose-flavored syrup."
         },
         {
