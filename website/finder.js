@@ -893,6 +893,14 @@ const recipes = [
         description: "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
       },
       {
+
+        "name": "Chicken Piccata",
+        "ingredients": ["chicken breasts", "lemon", "capers", "butter", "white wine", "flour"],
+        "cuisine": "Italian",
+        "type": "Non-Vegetarian",
+        "image": "https://images.themodernproper.com/production/posts/2019/Chicken-Picatta-8.jpg?w=800&q=82&auto=format&fit=crop&dm=1689343305&s=51c93f70d2c9eb342fe7862c7b752d08",
+        "description": "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta or vegetables."
+
         name: "Pesto Pasta",
         ingredients: ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
         cuisine: "Italian",
@@ -926,6 +934,7 @@ const recipes = [
       },
       {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "name": "Aloo Paratha",
         "ingredients": ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
         "cuisine": "Indian",
@@ -933,6 +942,9 @@ const recipes = [
         "image": "images/Aloo-Paratha-4.jpg",
         "description": "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
 =======
+=======
+
+>>>>>>> c2e64474aa30f96814646df8035a6e3f722dc48b
         name : "Aloo Paratha",
         ingredients: ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
         cuisine: "Indian",
@@ -956,7 +968,10 @@ const recipes = [
         type: "Vegetarian",
         image: "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
         description: "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
+<<<<<<< HEAD
 >>>>>>> 4c9ae14188f388c1531177c1a58a11707c12c74e
+=======
+>>>>>>> c2e64474aa30f96814646df8035a6e3f722dc48b
       },
       {
         name: "Chicken Korma",
@@ -972,46 +987,8 @@ const recipes = [
         cuisine: "Italian",
         type: "Non-Vegetarian",
         image: "https://images.themodernproper.com/production/posts/2019/Chicken-Picatta-8.jpg?w=800&q=82&auto=format&fit=crop&dm=1689343305&s=51c93f70d2c9eb342fe7862c7b752d08",
-        description: "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta or vegetables."
+        description: "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta 
       },
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 06287b8 (removed a recipe)
-      {
-=======
->>>>>>> 7f63b63ff2eec1742935e6957cb98ceda9a708b5
-        "name": "Chicken Piccata",
-        "ingredients": ["chicken breasts", "lemon", "capers", "butter", "white wine", "flour"],
-        "cuisine": "Italian",
-        "type": "Non-Vegetarian",
-        "image": "https://images.themodernproper.com/production/posts/2019/Chicken-Picatta-8.jpg?w=800&q=82&auto=format&fit=crop&dm=1689343305&s=51c93f70d2c9eb342fe7862c7b752d08",
-        "description": "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta or vegetables."
-<<<<<<< HEAD
-<<<<<<< HEAD
-      },
-
-      {
-=======
-      }
-        {
->>>>>>> 7f63b63ff2eec1742935e6957cb98ceda9a708b5
-=======
-      }
-
-
-=======
-        {
->>>>>>> parent of 06287b8 (removed a recipe)
-          "name": "Palak Paneer",
-          "ingredients": ["spinach", "paneer", "onion", "tomato", "garlic", "spices"],
-          "cuisine": "Indian",
-          "type": "Vegetarian",
-          "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
-          "description": "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
-=======
         {
           name: "Palak Paneer",
           ingredients: ["spinach", "paneer", "onion", "tomato", "garlic", "spices"],
@@ -1019,7 +996,6 @@ const recipes = [
           type: "Vegetarian",
           image: "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
           description: "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
->>>>>>> 14ffb04a02c9c23f6b0e5cfa98c10d17724381f7
         },
         {
           name: "Chicken Korma",
@@ -1047,6 +1023,7 @@ const recipes = [
           },
           {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "Malai Kofta",
             "ingredients": ["paneer", "potatoes", "cream", "cashew nuts", "tomato", "onion", "spices"],
             "cuisine": "Indian",
@@ -1067,11 +1044,9 @@ const recipes = [
 >>>>>>> 2ccb3419ab293ec181d923f4fb7856dbcebe754a
 ];
 >>>>>>> parent of 06287b8 (removed a recipe)
+=======
+>>>>>>> c2e64474aa30f96814646df8035a6e3f722dc48b
 
-=======
-]
->>>>>>> 7f63b63ff2eec1742935e6957cb98ceda9a708b5
-=======
             name: "Malai Kofta",
             ingredients: ["paneer", "potatoes", "cream", "cashew nuts", "tomato", "onion", "spices"],
             cuisine: "Indian",
@@ -1081,5 +1056,8 @@ const recipes = [
           },
 ];
 
+<<<<<<< HEAD
 >>>>>>> 14ffb04a02c9c23f6b0e5cfa98c10d17724381f7
 >>>>>>> 4c9ae14188f388c1531177c1a58a11707c12c74e
+=======
+>>>>>>> c2e64474aa30f96814646df8035a6e3f722dc48b
