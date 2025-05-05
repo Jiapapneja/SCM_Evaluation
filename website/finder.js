@@ -47,6 +47,15 @@ const adventurousRecipes = [
         image: "images/miso-soup.jpg", // Placeholder image path
         description: "A traditional Japanese soup made with dashi broth and miso paste, typically served with tofu and seaweed."
     },
+
+    {
+        name: "Chicken Katsu Curry",
+        ingredients: ["chicken breast", "flour", "egg", "breadcrumbs (panko)", "oil for frying", "Japanese curry roux", "onion", "carrot", "potato", "rice"],
+        cuisine: "Japanese",
+        type: "Non-Vegetarian",
+        image: "images/chicken-katsu-curry.jpg", // Placeholder image path
+        description: "Crispy breaded chicken cutlet served with rich and savory Japanese curry sauce over rice."
+    }
         // Add more adventurous recipes here following the same format
     ];
     
