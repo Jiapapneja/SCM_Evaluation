@@ -341,14 +341,6 @@ const adventurousRecipes = [
            image: "images/healthy_baked_eggplant_parmesan-1.jpg",
            description: "Baked layers of breaded eggplant, tomato sauce, and melted cheese — a comforting Italian classic."
         },
-          {
-            name: "Caprese Salad",
-            ingredients: ["tomatoes", "mozzarella", "basil", "olive oil", "balsamic vinegar", "salt", "pepper"],
-            cuisine: "Italian",
-            type: "Vegetarian",
-            image: "images/Caprese-Salad-7b.jpg",
-            description: "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
-          },
            {
             name: "Vegetable Lasagna",
             ingredients: ["lasagna noodles", "zucchini", "spinach", "ricotta", "tomato sauce", "mozzarella", "parmesan"],
