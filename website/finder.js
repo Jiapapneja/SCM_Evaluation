@@ -420,7 +420,25 @@ const adventurousRecipes = [
               type: "Non-Vegetarian",
               image: "images/BBQ-Chicken-Drumsticks.jpg",
               description: "Juicy chicken drumsticks coated in a smoky BBQ marinade and baked or grilled until perfectly caramelized and flavorful."
-        }      
+        },
+        {
+            name: "Gulab Jamun",
+            ingredients: ["milk powder", "flour", "baking soda", "milk", "ghee", "sugar", "water", "cardamom", "rose water"],
+            cuisine: "Indian",
+            type: "Dessert",
+            image: "images/Gulab-Jamun.jpg",
+            description: "Soft, round dumplings made from milk solids, deep-fried and soaked in a sweet rose-flavored syrup."
+        },
+        {
+            name: "Tiramisu",
+            ingredients: ["ladyfingers", "mascarpone cheese", "coffee", "cocoa powder", "sugar", "eggs", "heavy cream", "vanilla extract"],
+            cuisine: "Italian",
+            type: "Dessert",
+            image: "images/Tiramisu.jpg",
+            description: "A rich, creamy dessert made with layers of coffee-soaked ladyfingers, mascarpone cream, and dusted with cocoa powder."
+        }
+          
+                
     ];
     
     // JavaScript for your Recipe Finder application
