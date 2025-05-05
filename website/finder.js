@@ -947,30 +947,6 @@ const recipes = [
         type: "Vegetarian",
         image: "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
         description: "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
+      },
 
-      },
-      {
-        name: "Chicken Piccata",
-        ingredients: ["chicken breasts", "lemon", "capers", "butter", "white wine", "flour"],
-        cuisine: "Italian",
-        type: "Non-Vegetarian",
-        image: "https://images.themodernproper.com/production/posts/2019/Chicken-Picatta-8.jpg?w=800&q=82&auto=format&fit=crop&dm=1689343305&s=51c93f70d2c9eb342fe7862c7b752d08",
-        description: "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta 
-      },
-        {
-          name: "Chicken Korma",
-          ingredients: ["chicken", "yogurt", "onion", "garlic", "ginger", "spices"],
-          cuisine: "Indian",
-          type: "Non-Vegetarian",
-          image: "images/Eitan-Bernath-Chicken-Korma--819x1024.jpg",
-          description: "A rich and flavorful chicken curry cooked in a creamy yogurt-based sauce with aromatic spices."
-        },
-        {
-            name: "Shahi Paneer",
-            ingredients: ["paneer", "onion", "tomato", "cashew nuts", "cream", "butter", "spices"],
-            cuisine: "Indian",
-            type: "Vegetarian",
-            image: "images/shahi-paneer-recipe.jpg",
-            description: "A royal North Indian curry made with paneer cubes in a rich, creamy, and mildly spiced gravy of onions, tomatoes, and cashews."
-          },
-        ]
+       ]
