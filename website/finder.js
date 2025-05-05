@@ -405,7 +405,16 @@ const adventurousRecipes = [
               image: "images/Chicken-Piccata.jpg",
               description: "Tender chicken breasts lightly floured and sautéed in a tangy lemon-butter sauce with capers — a quick and elegant Italian dish."
         },
+        {
+              name: "Mutton Keema Pav",
+              ingredients: ["minced mutton", "onion", "tomato", "ginger", "garlic", "green peas", "spices", "butter", "pav buns"],
+              cuisine: "Indian",
+              type: "Non-Vegetarian",
+              image: "images/Mutton-Keema-Pav.jpg",
+              description: "A spicy minced mutton curry cooked with peas and aromatic spices, served hot with butter-toasted pav — a Mumbai street-food favorite."
+        },
         
+            
             
             
             
