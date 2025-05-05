@@ -933,7 +933,18 @@ const recipes = [
         description: "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
       },
       {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "name": "Aloo Paratha",
+        "ingredients": ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
+        "cuisine": "Indian",
+        "type": "Vegetarian",
+        "image": "images/Aloo-Paratha-4.jpg",
+        "description": "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
+=======
+=======
 
+>>>>>>> c2e64474aa30f96814646df8035a6e3f722dc48b
         name : "Aloo Paratha",
         ingredients: ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
         cuisine: "Indian",
@@ -957,6 +968,10 @@ const recipes = [
         type: "Vegetarian",
         image: "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
         description: "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
+<<<<<<< HEAD
+>>>>>>> 4c9ae14188f388c1531177c1a58a11707c12c74e
+=======
+>>>>>>> c2e64474aa30f96814646df8035a6e3f722dc48b
       },
       {
         name: "Chicken Korma",
@@ -1007,6 +1022,30 @@ const recipes = [
             description: "A royal North Indian curry made with paneer cubes in a rich, creamy, and mildly spiced gravy of onions, tomatoes, and cashews."
           },
           {
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "name": "Malai Kofta",
+            "ingredients": ["paneer", "potatoes", "cream", "cashew nuts", "tomato", "onion", "spices"],
+            "cuisine": "Indian",
+            "type": "Vegetarian",
+            "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/malai-kofta-recipe.jpg",
+            "description": "Soft paneer and potato balls (koftas) served in a smooth, creamy, and mildly spiced tomato-based gravy."
+          }
+<<<<<<< HEAD
+        ];
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        ];
+=======
+      
+  
+    
+>>>>>>> 2ccb3419ab293ec181d923f4fb7856dbcebe754a
+];
+>>>>>>> parent of 06287b8 (removed a recipe)
+=======
+>>>>>>> c2e64474aa30f96814646df8035a6e3f722dc48b
 
             name: "Malai Kofta",
             ingredients: ["paneer", "potatoes", "cream", "cashew nuts", "tomato", "onion", "spices"],
@@ -1017,3 +1056,8 @@ const recipes = [
           },
 ];
 
+<<<<<<< HEAD
+>>>>>>> 14ffb04a02c9c23f6b0e5cfa98c10d17724381f7
+>>>>>>> 4c9ae14188f388c1531177c1a58a11707c12c74e
+=======
+>>>>>>> c2e64474aa30f96814646df8035a6e3f722dc48b
