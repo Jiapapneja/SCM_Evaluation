@@ -413,14 +413,14 @@ const adventurousRecipes = [
               image: "images/Mutton-Keema-Pav.jpg",
               description: "A spicy minced mutton curry cooked with peas and aromatic spices, served hot with butter-toasted pav — a Mumbai street-food favorite."
         },
-        
-            
-            
-            
-            
-            
-            
-            
+        {
+              name: "BBQ Chicken Drumsticks",
+              ingredients: ["chicken drumsticks", "BBQ sauce", "paprika", "garlic powder", "brown sugar", "salt", "pepper"],
+              cuisine: "American",
+              type: "Non-Vegetarian",
+              image: "images/BBQ-Chicken-Drumsticks.jpg",
+              description: "Juicy chicken drumsticks coated in a smoky BBQ marinade and baked or grilled until perfectly caramelized and flavorful."
+        }      
     ];
     
     // JavaScript for your Recipe Finder application
