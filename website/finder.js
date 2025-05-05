@@ -354,7 +354,7 @@ const adventurousRecipes = [
           ingredients: ["spinach", "paneer", "onion", "garlic", "ginger", "tomato", "green chili", "spices", "cream"],
           cuisine: "Indian",
           type: "Vegetarian",
-          image: "images/Palak-Paneer.jpg",
+          image: "images/Palak Paneer.jpg",
           description: "A creamy spinach-based curry cooked with soft paneer cubes and aromatic spices, served hot with naan or rice."
         },
         {
@@ -362,7 +362,7 @@ const adventurousRecipes = [
               ingredients: ["stale bread", "cherry tomatoes", "cucumber", "red onion", "basil", "olive oil", "red wine vinegar", "salt", "pepper"],
               cuisine: "Italian",
               type: "Vegetarian",
-              image: "images/Panzanella-Salad.jpg",
+              image: "images/Panzanella.jpg",
               description: "A refreshing Tuscan bread salad made with chunks of day-old bread, juicy tomatoes, crisp cucumbers, and basil, tossed in a zesty vinaigrette."
         },
         {
@@ -370,7 +370,7 @@ const adventurousRecipes = [
               ingredients: ["sweet potatoes", "black beans", "onion", "garlic", "breadcrumbs", "cumin", "paprika", "olive oil", "salt", "pepper"],
               cuisine: "American",
               type: "Vegetarian",
-              image: "images/Sweet-Potato-Black-Bean-Burger.jpg",
+              image: "images/Sweet Potato Black Bean Burger.jpg",
               description: "A hearty homemade veggie burger made with mashed sweet potatoes and black beans, seasoned with warm spices and pan-seared for a crispy finish."
         },
         {
@@ -378,7 +378,7 @@ const adventurousRecipes = [
               ingredients: ["besan (gram flour)", "onion", "tomato", "green chili", "coriander", "spices", "water", "oil"],
               cuisine: "Indian",
               type: "Vegetarian",
-              image: "images/Besan-Chilla.jpg",
+              image: "images/Besan Chilla (1).jpg",
               description: "A savory Indian pancake made from spiced gram flour batter mixed with chopped vegetables, pan-cooked until golden and crispy — perfect for breakfast or a quick snack."
         },
         {
@@ -386,7 +386,7 @@ const adventurousRecipes = [
               ingredients: ["chicken", "onion", "tomato", "garlic", "ginger", "coconut", "black pepper", "fennel seeds", "curry leaves", "spices"],
               cuisine: "Indian",
               type: "Non-Vegetarian",
-              image: "images/Chicken-Chettinad.jpg",
+              image: "images/Chicken Chettinad.jpg",
               description: "A fiery and aromatic South Indian chicken curry made with freshly ground spices and roasted coconut, known for its bold flavor and rich texture."
         },
         {
@@ -394,7 +394,7 @@ const adventurousRecipes = [
               ingredients: ["boiled eggs", "onion", "tomato", "ginger", "garlic", "spices", "coriander", "oil"],
               cuisine: "Indian",
               type: "Non-Vegetarian",
-              image: "images/Egg-Curry.jpg",
+              image: "images/Egg Curry.jpg",
               description: "A flavorful curry made with hard-boiled eggs simmered in a rich, spiced onion-tomato gravy — perfect with rice or chapati."
         },
         {
@@ -402,7 +402,7 @@ const adventurousRecipes = [
               ingredients: ["chicken breasts", "lemon juice", "capers", "garlic", "butter", "white wine", "flour", "parsley"],
               cuisine: "Italian",
               type: "Non-Vegetarian",
-              image: "images/Chicken-Piccata.jpg",
+              image: "images/Chicken Piccata.jpg",
               description: "Tender chicken breasts lightly floured and sautéed in a tangy lemon-butter sauce with capers — a quick and elegant Italian dish."
         },
         {
@@ -410,7 +410,7 @@ const adventurousRecipes = [
               ingredients: ["minced mutton", "onion", "tomato", "ginger", "garlic", "green peas", "spices", "butter", "pav buns"],
               cuisine: "Indian",
               type: "Non-Vegetarian",
-              image: "images/Mutton-Keema-Pav.jpg",
+              image: "images/Mutton Keema Pav.jpg",
               description: "A spicy minced mutton curry cooked with peas and aromatic spices, served hot with butter-toasted pav — a Mumbai street-food favorite."
         },
         {
@@ -418,7 +418,7 @@ const adventurousRecipes = [
               ingredients: ["chicken drumsticks", "BBQ sauce", "paprika", "garlic powder", "brown sugar", "salt", "pepper"],
               cuisine: "American",
               type: "Non-Vegetarian",
-              image: "images/BBQ-Chicken-Drumsticks.jpg",
+              image: "images/BBQ Chicken Drumsticks.jpg",
               description: "Juicy chicken drumsticks coated in a smoky BBQ marinade and baked or grilled until perfectly caramelized and flavorful."
         },
         {
@@ -426,7 +426,7 @@ const adventurousRecipes = [
             ingredients: ["milk powder", "flour", "baking soda", "milk", "ghee", "sugar", "water", "cardamom", "rose water"],
             cuisine: "Indian",
             type: "Dessert",
-            image: "images/Gulab-Jamun.jpg",
+            image: "images/gulab jamun.jpg",
             description: "Soft, round dumplings made from milk solids, deep-fried and soaked in a sweet rose-flavored syrup."
         },
         {
