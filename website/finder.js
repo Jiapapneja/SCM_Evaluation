@@ -372,8 +372,16 @@ const adventurousRecipes = [
           type: "Vegetarian",
           image: "images/Palak-Paneer.jpg",
           description: "A creamy spinach-based curry cooked with soft paneer cubes and aromatic spices, served hot with naan or rice."
-        }
-        
+        },
+        {
+              name: "Panzanella",
+              ingredients: ["stale bread", "cherry tomatoes", "cucumber", "red onion", "basil", "olive oil", "red wine vinegar", "salt", "pepper"],
+              cuisine: "Italian",
+              type: "Vegetarian",
+              image: "images/Panzanella-Salad.jpg",
+              description: "A refreshing Tuscan bread salad made with chunks of day-old bread, juicy tomatoes, crisp cucumbers, and basil, tossed in a zesty vinaigrette."
+            }
+            
     ];
     
     // JavaScript for your Recipe Finder application
