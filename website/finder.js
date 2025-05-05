@@ -365,6 +365,15 @@ const adventurousRecipes = [
             image: "images/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
             description: "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
           },
+        {
+          name: "Palak Paneer",
+          ingredients: ["spinach", "paneer", "onion", "garlic", "ginger", "tomato", "green chili", "spices", "cream"],
+          cuisine: "Indian",
+          type: "Vegetarian",
+          image: "images/Palak-Paneer.jpg",
+          description: "A creamy spinach-based curry cooked with soft paneer cubes and aromatic spices, served hot with naan or rice."
+        }
+        
     ];
     
     // JavaScript for your Recipe Finder application
