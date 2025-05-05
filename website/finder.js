@@ -873,7 +873,7 @@ const recipes = [
        ingredients: ["eggplant", "tomato sauce", "mozzarella cheese", "parmesan cheese", "breadcrumbs", "olive oil", "basil"],
        cuisine: "Italian",
        type: "Vegetarian",
-       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Eggplant_Parmigiana_%28cropped%29.jpg/640px-Eggplant_Parmigiana_%28cropped%29.jpg",
+       image: "images/healthy_baked_eggplant_parmesan-1.jpg",
        description: "Baked layers of breaded eggplant, tomato sauce, and melted cheese — a comforting Italian classic."
     },
       {
@@ -938,7 +938,7 @@ const recipes = [
         ingredients: ["eggplant", "tomato sauce", "mozzarella cheese", "parmesan cheese", "breadcrumbs", "olive oil", "basil"],
         cuisine: "Italian",
         type: "Vegetarian",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Eggplant_Parmigiana_%28cropped%29.jpg/640px-Eggplant_Parmigiana_%28cropped%29.jpg",
+        image:"images/healthy_baked_eggplant_parmesan-1.jpg",
         description: "Baked layers of breaded eggplant, tomato sauce, and melted cheese — a comforting Italian classic."
       },  
       {
@@ -954,7 +954,7 @@ const recipes = [
         ingredients: ["chicken", "yogurt", "onion", "garlic", "ginger", "spices"],
         cuisine: "Indian",
         type: "Non-Vegetarian",
-        image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/06/chicken-korma.jpg",
+        image: "images/Eitan-Bernath-Chicken-Korma--819x1024.jpg",
         description: "A rich and flavorful chicken curry cooked in a creamy yogurt-based sauce with aromatic spices."
       },
       {
@@ -978,7 +978,7 @@ const recipes = [
           ingredients: ["chicken", "yogurt", "onion", "garlic", "ginger", "spices"],
           cuisine: "Indian",
           type: "Non-Vegetarian",
-          image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/06/chicken-korma.jpg",
+          image: "images/Eitan-Bernath-Chicken-Korma--819x1024.jpg",
           description: "A rich and flavorful chicken curry cooked in a creamy yogurt-based sauce with aromatic spices."
         },
         {
@@ -994,7 +994,7 @@ const recipes = [
             ingredients: ["paneer", "onion", "tomato", "cashew nuts", "cream", "butter", "spices"],
             cuisine: "Indian",
             type: "Vegetarian",
-            image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/shahi-paneer-recipe.jpg",
+            image: "images/shahi-paneer-recipe.jpg",
             description: "A royal North Indian curry made with paneer cubes in a rich, creamy, and mildly spiced gravy of onions, tomatoes, and cashews."
           },
           {
@@ -1002,7 +1002,7 @@ const recipes = [
             ingredients: ["paneer", "potatoes", "cream", "cashew nuts", "tomato", "onion", "spices"],
             cuisine: "Indian",
             type: "Vegetarian",
-            image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/malai-kofta-recipe.jpg",
+            image: "images/Malai-Kofta-1-of-1-9.jpg",
             description: "Soft paneer and potato balls (koftas) served in a smooth, creamy, and mildly spiced tomato-based gravy."
           },
 ];
