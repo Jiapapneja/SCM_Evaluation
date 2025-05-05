@@ -341,14 +341,6 @@ const adventurousRecipes = [
            image: "images/healthy_baked_eggplant_parmesan-1.jpg",
            description: "Baked layers of breaded eggplant, tomato sauce, and melted cheese — a comforting Italian classic."
         },
-          {
-            name: "Caprese Salad",
-            ingredients: ["tomatoes", "mozzarella", "basil", "olive oil", "balsamic vinegar", "salt", "pepper"],
-            cuisine: "Italian",
-            type: "Vegetarian",
-            image: "images/Caprese-Salad-7b.jpg",
-            description: "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
-          },
            {
             name: "Vegetable Lasagna",
             ingredients: ["lasagna noodles", "zucchini", "spinach", "ricotta", "tomato sauce", "mozzarella", "parmesan"],
@@ -397,10 +389,38 @@ const adventurousRecipes = [
               image: "images/Chicken-Chettinad.jpg",
               description: "A fiery and aromatic South Indian chicken curry made with freshly ground spices and roasted coconut, known for its bold flavor and rich texture."
         },
-            
-            
-            
-            
+        {
+              name: "Egg Curry",
+              ingredients: ["boiled eggs", "onion", "tomato", "ginger", "garlic", "spices", "coriander", "oil"],
+              cuisine: "Indian",
+              type: "Non-Vegetarian",
+              image: "images/Egg-Curry.jpg",
+              description: "A flavorful curry made with hard-boiled eggs simmered in a rich, spiced onion-tomato gravy — perfect with rice or chapati."
+        },
+        {
+              name: "Chicken Piccata",
+              ingredients: ["chicken breasts", "lemon juice", "capers", "garlic", "butter", "white wine", "flour", "parsley"],
+              cuisine: "Italian",
+              type: "Non-Vegetarian",
+              image: "images/Chicken-Piccata.jpg",
+              description: "Tender chicken breasts lightly floured and sautéed in a tangy lemon-butter sauce with capers — a quick and elegant Italian dish."
+        },
+        {
+              name: "Mutton Keema Pav",
+              ingredients: ["minced mutton", "onion", "tomato", "ginger", "garlic", "green peas", "spices", "butter", "pav buns"],
+              cuisine: "Indian",
+              type: "Non-Vegetarian",
+              image: "images/Mutton-Keema-Pav.jpg",
+              description: "A spicy minced mutton curry cooked with peas and aromatic spices, served hot with butter-toasted pav — a Mumbai street-food favorite."
+        },
+        {
+              name: "BBQ Chicken Drumsticks",
+              ingredients: ["chicken drumsticks", "BBQ sauce", "paprika", "garlic powder", "brown sugar", "salt", "pepper"],
+              cuisine: "American",
+              type: "Non-Vegetarian",
+              image: "images/BBQ-Chicken-Drumsticks.jpg",
+              description: "Juicy chicken drumsticks coated in a smoky BBQ marinade and baked or grilled until perfectly caramelized and flavorful."
+        }      
     ];
     
     // JavaScript for your Recipe Finder application
