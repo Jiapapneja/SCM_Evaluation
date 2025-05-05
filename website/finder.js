@@ -30,7 +30,23 @@ const adventurousRecipes = [
             type: "Depends on protein (Vegetarian or Non-Vegetarian)",
             image: "images/bibimbap.jpg", // Placeholder image path (update with actual URL if hosted)
             description: "A colorful and customizable mixed rice bowl with various toppings and spicy sauce."
-        }
+        },
+    {
+        name: "Gyoza (Pork and Vegetable)",
+        ingredients: ["gyoza wrappers", "ground pork", "cabbage", "napa cabbage", "garlic", "ginger", "soy sauce", "sesame oil", "sake", "cornstarch", "dipping sauce"],
+        cuisine: "Japanese",
+        type: "Non-Vegetarian",
+        image: "images/gyoza.jpg", // Placeholder image path
+        description: "Pan-fried Japanese dumplings with a savory filling, crispy bottom, and tender top."
+    },
+    {
+        name: "Miso Soup",
+        ingredients: ["miso paste", "dashi stock", "tofu", "wakame seaweed", "green onions"],
+        cuisine: "Japanese",
+        type: "Vegetarian (can be Vegan)",
+        image: "images/miso-soup.jpg", // Placeholder image path
+        description: "A traditional Japanese soup made with dashi broth and miso paste, typically served with tofu and seaweed."
+    },
         // Add more adventurous recipes here following the same format
     ];
     
