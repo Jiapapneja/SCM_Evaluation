@@ -606,7 +606,4 @@ const recipes = [
             "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/malai-kofta-recipe.jpg",
             "description": "Soft paneer and potato balls (koftas) served in a smooth, creamy, and mildly spiced tomato-based gravy."
           }
-      
-  
-    
-];
+        ];
