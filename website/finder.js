@@ -378,7 +378,7 @@ const adventurousRecipes = [
               ingredients: ["besan (gram flour)", "onion", "tomato", "green chili", "coriander", "spices", "water", "oil"],
               cuisine: "Indian",
               type: "Vegetarian",
-              image: "images/Besan-Chilla.jpg",
+              image: "images/Besan Chilla (1).jpg",
               description: "A savory Indian pancake made from spiced gram flour batter mixed with chopped vegetables, pan-cooked until golden and crispy — perfect for breakfast or a quick snack."
         },
         {
@@ -386,7 +386,7 @@ const adventurousRecipes = [
               ingredients: ["chicken", "onion", "tomato", "garlic", "ginger", "coconut", "black pepper", "fennel seeds", "curry leaves", "spices"],
               cuisine: "Indian",
               type: "Non-Vegetarian",
-              image: "images/Chicken-Chettinad.jpg",
+              image: "images/Chicken Chettinad.jpg",
               description: "A fiery and aromatic South Indian chicken curry made with freshly ground spices and roasted coconut, known for its bold flavor and rich texture."
         },
         {
