@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="finder.css">
-    <title>Recipe Finder</title>
+    <title>Snapdish</title>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Recipe Finder</h1>
+        <h1>Snapdish</h1>
         <p>Enter your ingredients below to find recipes!</p>
     </header>
 
@@ -35,13 +35,21 @@
                 <i class="fas fa-times"></i> Clear
             </button>
         </div>
-        <div class="button-wrapper">
-            <button id="surprise-me-button">
-                <span class="feeling-adventurous">Feeling adventurous?</span>
-                <span class="arrow-icon">→</span> <span class="surprise-me">Surprise Me!</span>
+        <div class="button-container">
+            <button id="adventurous-button">
+                Feeling adventurous?
             </button>
         </div>
         
+        <div id="surprise-message" class="hidden">
+            Surprise Me!
+        </div>
+        
+        <div id="random-recipes-display" class="hidden">
+            <h2>Your Adventurous Recipe:</h2>
+            <div id="recipe-details">
+                </div>
+        </div>
     </div>
     
     <div class="loader" id="loader" style="display: none;"></div>
