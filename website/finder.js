@@ -349,14 +349,6 @@ const adventurousRecipes = [
             image: "images/Caprese-Salad-7b.jpg",
             description: "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
           },
-          {
-            name: "Pesto Pasta",
-            ingredients: ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
-            cuisine: "Italian",
-            type: "Vegetarian",
-            image: "images/Basil-Pesto-Thumbnail-500x500.jpg",
-            description: "A simple, aromatic pasta dish tossed in fresh basil pesto and topped with parmesan and pine nuts."
-          },
            {
             name: "Vegetable Lasagna",
             ingredients: ["lasagna noodles", "zucchini", "spinach", "ricotta", "tomato sauce", "mozzarella", "parmesan"],
