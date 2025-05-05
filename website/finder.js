@@ -930,7 +930,15 @@ const recipes = [
         cuisine: "Indian",
         type: "Vegetarian",
         image: "images/Aloo-Paratha-4.jpg",
-        description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle.
+        description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
+      },
+      {
+        name: "Aloo Paratha",
+        ingredients: ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "images/Aloo-Paratha-4.jpg",
+        description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
       },
       {
         name: "Eggplant Parmesan",
@@ -939,8 +947,8 @@ const recipes = [
         type: "Vegetarian",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Eggplant_Parmigiana_%28cropped%29.jpg/640px-Eggplant_Parmigiana_%28cropped%29.jpg",
         description: "Baked layers of breaded eggplant, tomato sauce, and melted cheese — a comforting Italian classic."
-      },
-        {
+      },  
+      {
         name: "Palak Paneer",
         ingredients: ["spinach", "paneer", "onion", "tomato", "garlic", "spices"],
         cuisine: "Indian",
@@ -1003,6 +1011,6 @@ const recipes = [
             type: "Vegetarian",
             image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/malai-kofta-recipe.jpg",
             description: "Soft paneer and potato balls (koftas) served in a smooth, creamy, and mildly spiced tomato-based gravy."
-          }
+          },
 ];
 
