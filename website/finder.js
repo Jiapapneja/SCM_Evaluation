@@ -932,14 +932,7 @@ const recipes = [
         image: "images/Aloo-Paratha-4.jpg",
         description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
       },
-      {
-        name: "Aloo Paratha",
-        ingredients: ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
-        cuisine: "Indian",
-        type: "Vegetarian",
-        image: "images/Aloo-Paratha-4.jpg",
-        description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
-      },
+      
       {
         name: "Eggplant Parmesan",
         ingredients: ["eggplant", "tomato sauce", "mozzarella cheese", "parmesan cheese", "breadcrumbs", "olive oil", "basil"],
