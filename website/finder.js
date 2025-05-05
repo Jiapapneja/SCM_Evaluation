@@ -380,7 +380,16 @@ const adventurousRecipes = [
               type: "Vegetarian",
               image: "images/Panzanella-Salad.jpg",
               description: "A refreshing Tuscan bread salad made with chunks of day-old bread, juicy tomatoes, crisp cucumbers, and basil, tossed in a zesty vinaigrette."
-            }
+        },
+        {
+              name: "Sweet Potato Black Bean Burger",
+              ingredients: ["sweet potatoes", "black beans", "onion", "garlic", "breadcrumbs", "cumin", "paprika", "olive oil", "salt", "pepper"],
+              cuisine: "American",
+              type: "Vegetarian",
+              image: "images/Sweet-Potato-Black-Bean-Burger.jpg",
+              description: "A hearty homemade veggie burger made with mashed sweet potatoes and black beans, seasoned with warm spices and pan-seared for a crispy finish."
+        },
+            
             
     ];
     
