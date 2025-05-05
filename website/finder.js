@@ -543,14 +543,8 @@ const recipes = [
         type: "Vegetarian",
         image: "images/Vegetable-Biryani-Instant-Pot-Piping-Pot-Curry-4.jpg",
         description: "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
-      }
-        name: "Aloo Paratha",
-        ingredients: ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
-        cuisine: "Indian",
-        type: "Vegetarian",
-        image: "images/Aloo-Paratha-4.jpg",
-        description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle.
-{
+      },
+      {
         "name": "Aloo Paratha",
         "ingredients": ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
         "cuisine": "Indian",
