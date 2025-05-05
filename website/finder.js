@@ -878,14 +878,6 @@ const recipes = [
         description: "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
       },
       {
-
-        "name": "Chicken Piccata",
-        "ingredients": ["chicken breasts", "lemon", "capers", "butter", "white wine", "flour"],
-        "cuisine": "Italian",
-        "type": "Non-Vegetarian",
-        "image": "https://images.themodernproper.com/production/posts/2019/Chicken-Picatta-8.jpg?w=800&q=82&auto=format&fit=crop&dm=1689343305&s=51c93f70d2c9eb342fe7862c7b752d08",
-        "description": "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta or vegetables."
-
         name: "Pesto Pasta",
         ingredients: ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
         cuisine: "Italian",
@@ -926,6 +918,9 @@ const recipes = [
         description: "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
       },
       {
+
+        name: "Aloo Paratha",
+
         "name": "Aloo Paratha",
         "ingredients": ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
         "cuisine": "Indian",
@@ -934,13 +929,13 @@ const recipes = [
         "description": "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
 
         name : "Aloo Paratha",
+
         ingredients: ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
         cuisine: "Indian",
         type: "Vegetarian",
         image: "images/Aloo-Paratha-4.jpg",
         description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
       },
-      
       {
         name: "Eggplant Parmesan",
         ingredients: ["eggplant", "tomato sauce", "mozzarella cheese", "parmesan cheese", "breadcrumbs", "olive oil", "basil"],
@@ -958,6 +953,7 @@ const recipes = [
         description: "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
 
       },
+        
       {
         name: "Chicken Korma",
         ingredients: ["chicken", "yogurt", "onion", "garlic", "ginger", "spices"],
@@ -1039,3 +1035,4 @@ const recipes = [
             description: "Soft paneer and potato balls (koftas) served in a smooth, creamy, and mildly spiced tomato-based gravy."
           },
 ];
+
