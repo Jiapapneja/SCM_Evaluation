@@ -878,6 +878,14 @@ const recipes = [
         description: "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
       },
       {
+
+        "name": "Chicken Piccata",
+        "ingredients": ["chicken breasts", "lemon", "capers", "butter", "white wine", "flour"],
+        "cuisine": "Italian",
+        "type": "Non-Vegetarian",
+        "image": "https://images.themodernproper.com/production/posts/2019/Chicken-Picatta-8.jpg?w=800&q=82&auto=format&fit=crop&dm=1689343305&s=51c93f70d2c9eb342fe7862c7b752d08",
+        "description": "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta or vegetables."
+
         name: "Pesto Pasta",
         ingredients: ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
         cuisine: "Italian",
@@ -895,12 +903,68 @@ const recipes = [
       },
 
       {
+
         "name": "Chicken Korma",
         "ingredients": ["chicken", "yogurt", "onion", "garlic", "ginger", "spices"],
         "cuisine": "Indian",
         "type": "Non-Vegetarian",
         "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/06/chicken-korma.jpg",
         "description": "A rich and flavorful chicken curry cooked in a creamy yogurt-based sauce with aromatic spices."
+        name: "Masala Dosa",
+        ingredients: ["dosa batter", "potatoes", "onion", "mustard seeds", "curry leaves"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "images/masala-dosa-recipe.jpg",
+        description: "Crispy fermented rice crepe filled with spicy mashed potatoes, served with chutney and sambar."
+      },
+      {
+        name: "Vegetable Biryani",
+        ingredients: ["basmati rice", "mixed vegetables", "spices", "yogurt", "saffron"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "images/Vegetable-Biryani-Instant-Pot-Piping-Pot-Curry-4.jpg",
+        description: "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
+      },
+      {
+        "name": "Aloo Paratha",
+        "ingredients": ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
+        "cuisine": "Indian",
+        "type": "Vegetarian",
+        "image": "images/Aloo-Paratha-4.jpg",
+        "description": "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
+
+        name : "Aloo Paratha",
+        ingredients: ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "images/Aloo-Paratha-4.jpg",
+        description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
+      },
+      
+      {
+        name: "Eggplant Parmesan",
+        ingredients: ["eggplant", "tomato sauce", "mozzarella cheese", "parmesan cheese", "breadcrumbs", "olive oil", "basil"],
+        cuisine: "Italian",
+        type: "Vegetarian",
+        image:"images/healthy_baked_eggplant_parmesan-1.jpg",
+        description: "Baked layers of breaded eggplant, tomato sauce, and melted cheese — a comforting Italian classic."
+      },  
+      {
+        name: "Palak Paneer",
+        ingredients: ["spinach", "paneer", "onion", "tomato", "garlic", "spices"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
+        description: "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
+
+      },
+      {
+        name: "Chicken Korma",
+        ingredients: ["chicken", "yogurt", "onion", "garlic", "ginger", "spices"],
+        cuisine: "Indian",
+        type: "Non-Vegetarian",
+        image: "images/Eitan-Bernath-Chicken-Korma--819x1024.jpg",
+        description: "A rich and flavorful chicken curry cooked in a creamy yogurt-based sauce with aromatic spices."
       },
       {
         name: "Chicken Piccata",
@@ -908,7 +972,7 @@ const recipes = [
         cuisine: "Italian",
         type: "Non-Vegetarian",
         image: "https://images.themodernproper.com/production/posts/2019/Chicken-Picatta-8.jpg?w=800&q=82&auto=format&fit=crop&dm=1689343305&s=51c93f70d2c9eb342fe7862c7b752d08",
-        description: "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta or vegetables."
+        description: "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta 
       },
 
       {
@@ -918,6 +982,29 @@ const recipes = [
           "type": "Vegetarian",
           "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
           "description": "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
+        {
+          name: "Palak Paneer",
+          ingredients: ["spinach", "paneer", "onion", "tomato", "garlic", "spices"],
+          cuisine: "Indian",
+          type: "Vegetarian",
+          image: "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
+          description: "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
+        },
+        {
+          name: "Chicken Korma",
+          ingredients: ["chicken", "yogurt", "onion", "garlic", "ginger", "spices"],
+          cuisine: "Indian",
+          type: "Non-Vegetarian",
+          image: "images/Eitan-Bernath-Chicken-Korma--819x1024.jpg",
+          description: "A rich and flavorful chicken curry cooked in a creamy yogurt-based sauce with aromatic spices."
+        },
+        {
+          name: "Chicken Piccata",
+          ingredients: ["chicken breasts", "lemon", "capers", "butter", "white wine", "flour"],
+          cuisine: "Italian",
+          type: "Non-Vegetarian",
+          image: "https://images.themodernproper.com/production/posts/2019/Chicken-Picatta-8.jpg?w=800&q=82&auto=format&fit=crop&dm=1689343305&s=51c93f70d2c9eb342fe7862c7b752d08",
+          description: "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta or vegetables."
         },
 
         {
@@ -929,6 +1016,21 @@ const recipes = [
             "description": "A royal North Indian curry made with paneer cubes in a rich, creamy, and mildly spiced gravy of onions, tomatoes, and cashews."
           },
 {
+            name: "Shahi Paneer",
+            ingredients: ["paneer", "onion", "tomato", "cashew nuts", "cream", "butter", "spices"],
+            cuisine: "Indian",
+            type: "Vegetarian",
+            image: "images/shahi-paneer-recipe.jpg",
+            description: "A royal North Indian curry made with paneer cubes in a rich, creamy, and mildly spiced gravy of onions, tomatoes, and cashews."
+          },
+          {
+            "name": "Malai Kofta",
+            "ingredients": ["paneer", "potatoes", "cream", "cashew nuts", "tomato", "onion", "spices"],
+            "cuisine": "Indian",
+            "type": "Vegetarian",
+            "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/malai-kofta-recipe.jpg",
+            "description": "Soft paneer and potato balls (koftas) served in a smooth, creamy, and mildly spiced tomato-based gravy."
+          }
             name: "Malai Kofta",
             ingredients: ["paneer", "potatoes", "cream", "cashew nuts", "tomato", "onion", "spices"],
             cuisine: "Indian",
