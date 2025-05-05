@@ -15,7 +15,6 @@ function togglePanel(showSignUp) {
     signInButton.disabled = true;
     
     container.classList.toggle("right-panel-active", showSignUp);
-    
     // Re-enable buttons after transition completes
     setTimeout(() => {
         signUpButton.disabled = false;
