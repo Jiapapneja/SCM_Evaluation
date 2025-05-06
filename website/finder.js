@@ -1126,7 +1126,7 @@ function saveRecipe(recipe) {
             image: "images/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
             description: "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
           },
->>>>>>> 5f63df5b43f4996e05d1ce1d3257079f51815162
+             f63df5b43f4996e05d1ce1d3257079f51815162
         {
           name: "Palak Paneer",
           ingredients: ["spinach", "paneer", "onion", "garlic", "ginger", "tomato", "green chili", "spices", "cream"],
