@@ -41,6 +41,18 @@ body {
     padding: 20px;
     position: relative;
     z-index: 0;
+    opacity: 0; /* Start completely transparent */
+    transform: translateY(20px); /* Start slightly below its final position */
+    animation: fadeInRise 0.8s ease-out forwards; /* Apply the animation */
+}
+
+/* --- Define the keyframes for the animation --- */
+@keyframes fadeInRise {
+    to {
+        opacity: 1; /* Fade to fully visible */
+        transform: translateY(0); /* Move to its final position */
+    }
+    
 }
 
 body::before {
