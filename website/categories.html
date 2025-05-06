@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Categories - SNAPDISH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="categories.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>SNAPDISH</h1>
+            <p class="tagline">Discover delicious and healthy recipes based on your preferences</p>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="finder.html">Recipe Finder</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="categories-container">
+        <section class="categories-intro">
+            <h2>Explore Recipes by Category</h2>
+            <p>Browse our collection of recipes organized by cuisine type, dietary preferences, and cooking styles</p>
+        </section>
+
+        <section class="category-section">
+            <h3>Cuisine Types</h3>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterByCuisine('Indian')">
+                    <img src="images/indian-cuisine.jpg" alt="Indian Cuisine">
+                    <div class="category-overlay">
+                        <h4>Indian</h4>
+                        <p>Spices, curries, and diverse regional flavors</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByCuisine('Italian')">
+                    <img src="images/italian-cuisine.jpg" alt="Italian Cuisine">
+                    <div class="category-overlay">
+                        <h4>Italian</h4>
+                        <p>Pasta, pizza, and Mediterranean flavors</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByCuisine('American')">
+                    <img src="images/american-cuisine.jpg" alt="American Cuisine">
+                    <div class="category-overlay">
+                        <h4>American</h4>
+                        <p>Classic comfort foods and modern fusion</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByCuisine('Asian')">
+                    <img src="images/asian-cuisine.jpg" alt="Asian Cuisine">
+                    <div class="category-overlay">
+                        <h4>Asian</h4>
+                        <p>Diverse flavors from across the continent</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByCuisine('Mediterranean')">
+                    <img src="images/mediterranean-cuisine.jpg" alt="Mediterranean Cuisine">
+                    <div class="category-overlay">
+                        <h4>Mediterranean</h4>
+                        <p>Healthy, fresh, and flavorful dishes</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByCuisine('Mexican')">
+                    <img src="images/mexican-cuisine.jpg" alt="Mexican Cuisine">
+                    <div class="category-overlay">
+                        <h4>Mexican</h4>
+                        <p>Bold spices and vibrant flavors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h3>Dietary Preferences</h3>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterByType('Vegetarian')">
+                    <img src="images/vegetarian.jpg" alt="Vegetarian">
+                    <div class="category-overlay">
+                        <h4>Vegetarian</h4>
+                        <p>Plant-based and meat-free options</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByType('Vegan')">
+                    <img src="images/vegan.jpg" alt="Vegan">
+                    <div class="category-overlay">
+                        <h4>Vegan</h4>
+                        <p>100% plant-based recipes</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByType('Non-Vegetarian')">
+                    <img src="images/non-veg.jpg" alt="Non-Vegetarian">
+                    <div class="category-overlay">
+                        <h4>Non-Vegetarian</h4>
+                        <p>Meat and poultry dishes</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByType('Gluten-Free')">
+                    <img src="images/gluten-free.jpg" alt="Gluten Free">
+                    <div class="category-overlay">
+                        <h4>Gluten Free</h4>
+                        <p>Suitable for gluten sensitivities</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByType('Dairy-Free')">
+                    <img src="images/dairy-free.jpg" alt="Dairy Free">
+                    <div class="category-overlay">
+                        <h4>Dairy Free</h4>
+                        <p>No milk products</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByType('Low-Carb')">
+                    <img src="images/low-carb.jpg" alt="Low Carb">
+                    <div class="category-overlay">
+                        <h4>Low Carb</h4>
+                        <p>Keto-friendly options</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h3>Meal Types</h3>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterByMeal('Breakfast')">
+                    <img src="images/breakfast.jpg" alt="Breakfast">
+                    <div class="category-overlay">
+                        <h4>Breakfast</h4>
+                        <p>Start your day right</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByMeal('Lunch')">
+                    <img src="images/lunch.jpg" alt="Lunch">
+                    <div class="category-overlay">
+                        <h4>Lunch</h4>
+                        <p>Midday meals</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByMeal('Dinner')">
+                    <img src="images/dinner.jpg" alt="Dinner">
+                    <div class="category-overlay">
+                        <h4>Dinner</h4>
+                        <p>Evening meals</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByMeal('Dessert')">
+                    <img src="images/dessert.jpg" alt="Dessert">
+                    <div class="category-overlay">
+                        <h4>Dessert</h4>
+                        <p>Sweet treats</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByMeal('Snacks')">
+                    <img src="images/snacks.jpg" alt="Snacks">
+                    <div class="category-overlay">
+                        <h4>Snacks</h4>
+                        <p>Quick bites</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="filterByMeal('Drinks')">
+                    <img src="images/drinks.jpg" alt="Drinks">
+                    <div class="category-overlay">
+                        <h4>Drinks</h4>
+                        <p>Beverages and cocktails</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; <span class="current-year"></span> SNAPDISH. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="categories.js"></script>
+</body>
+</html>
