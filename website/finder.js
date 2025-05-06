@@ -4,6 +4,111 @@
 // You can add more recipes to this list following the same structure
 const adventurousRecipes = [
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+       name: "Eggplant Parmesan",
+       ingredients: ["eggplant", "tomato sauce", "mozzarella cheese", "parmesan cheese", "breadcrumbs", "olive oil", "basil"],
+       cuisine: "Italian",
+       type: "Vegetarian",
+       image: "images/healthy_baked_eggplant_parmesan-1.jpg",
+       description: "Baked layers of breaded eggplant, tomato sauce, and melted cheese — a comforting Italian classic."
+    },
+      {
+        name: "Bruschetta",
+        ingredients: ["baguette", "tomatoes", "garlic", "basil", "olive oil", "salt"],
+        cuisine: "Italian",
+        type: "Vegetarian",
+        image: "images/bruschetta-recipe-1.jpg",
+        description: "Grilled bread rubbed with garlic and topped with fresh chopped tomatoes and basil."
+      },
+      {
+        name: "Caprese Salad",
+        ingredients: ["tomatoes", "mozzarella", "basil", "olive oil", "balsamic vinegar", "salt", "pepper"],
+        cuisine: "Italian",
+        type: "Vegetarian",
+        image: "images/Caprese-Salad-7b.jpg",
+        description: "A simple and fresh Italian salad made with ripe tomatoes, mozzarella, and basil."
+      },
+      {
+
+        "name": "Chicken Piccata",
+        "ingredients": ["chicken breasts", "lemon", "capers", "butter", "white wine", "flour"],
+        "cuisine": "Italian",
+        "type": "Non-Vegetarian",
+        "image": "https://images.themodernproper.com/production/posts/2019/Chicken-Picatta-8.jpg?w=800&q=82&auto=format&fit=crop&dm=1689343305&s=51c93f70d2c9eb342fe7862c7b752d08",
+        "description": "Chicken Piccata is a classic Italian-American dish featuring tender chicken breasts lightly dredged in flour and pan-fried, then simmered in a tangy lemon-butter sauce with capers and white wine. It's bright, savory, and perfect with pasta or vegetables."
+      },
+      {
+        name: "Pesto Pasta",
+        ingredients: ["pasta", "basil pesto", "parmesan", "pine nuts", "olive oil"],
+        cuisine: "Italian",
+        type: "Vegetarian",
+        image: "images/Basil-Pesto-Thumbnail-500x500.jpg",
+        description: "A simple, aromatic pasta dish tossed in fresh basil pesto and topped with parmesan and pine nuts."
+      },
+       {
+        name: "Vegetable Lasagna",
+        ingredients: ["lasagna noodles", "zucchini", "spinach", "ricotta", "tomato sauce", "mozzarella", "parmesan"],
+        cuisine: "Italian",
+        type: "Vegetarian",
+        image: "images/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
+        description: "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
+      },
+      {
+        name: "Masala Dosa",
+        ingredients: ["dosa batter", "potatoes", "onion", "mustard seeds", "curry leaves"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "images/masala-dosa-recipe.jpg",
+        description: "Crispy fermented rice crepe filled with spicy mashed potatoes, served with chutney and sambar."
+      },
+      {
+        name: "Vegetable Biryani",
+        ingredients: ["basmati rice", "mixed vegetables", "spices", "yogurt", "saffron"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "images/Vegetable-Biryani-Instant-Pot-Piping-Pot-Curry-4.jpg",
+        description: "A fragrant rice dish layered with spiced vegetables and cooked with saffron and herbs."
+      },
+      {
+
+        name : "Aloo Paratha",
+        ingredients: ["whole wheat flour", "potatoes", "spices", "ghee", "coriander"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "images/Aloo-Paratha-4.jpg",
+        description: "Stuffed flatbread with spiced mashed potatoes, traditionally served with curd or pickle."
+      },
+      
+      {
+        name: "Eggplant Parmesan",
+        ingredients: ["eggplant", "tomato sauce", "mozzarella cheese", "parmesan cheese", "breadcrumbs", "olive oil", "basil"],
+        cuisine: "Italian",
+        type: "Vegetarian",
+        image:"images/healthy_baked_eggplant_parmesan-1.jpg",
+        description: "Baked layers of breaded eggplant, tomato sauce, and melted cheese — a comforting Italian classic."
+      },  
+      {
+        name: "Palak Paneer",
+        ingredients: ["spinach", "paneer", "onion", "tomato", "garlic", "spices"],
+        cuisine: "Indian",
+        type: "Vegetarian",
+        image: "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-1.jpg",
+        description: "A creamy spinach curry with soft paneer cubes, seasoned with Indian spices."
+      },
+      {
+        name: "Chicken Korma",
+        ingredients: ["chicken", "yogurt", "onion", "garlic", "ginger", "spices"],
+        cuisine: "Indian",
+        type: "Non-Vegetarian",
+        image: "images/Eitan-Bernath-Chicken-Korma--819x1024.jpg",
+        description: "A rich and flavorful chicken curry cooked in a creamy yogurt-based sauce with aromatic spices."
+      },
+   
+=======
+        name: "Chicken Katsu Curry",
+        ingredients: ["chicken breast", "flour", "egg", "breadcrumbs (panko)", "oil for frying", "Japanese curry roux", "onion", "carrot", "potato", "rice"],
+=======
         name: "Spicy Peanut Noodles",
         ingredients: ["noodles", "peanut butter", "soy sauce", "rice vinegar", "sesame oil", "garlic", "ginger", "chili flakes", "vegetables (e.g., bell peppers, carrots)", "optional: chicken or tofu"],
         cuisine: "Asian-inspired",
@@ -34,7 +139,15 @@ const adventurousRecipes = [
         type: "Depends on protein (Vegetarian or Non-Vegetarian)",
         image: "images/bibimbap.jpg", // Placeholder image path (update with actual URL if hosted)
         description: "A colorful and customizable mixed rice bowl with various toppings and spicy sauce."
-    }
+    },
+    {
+        name: "Pancakes",
+        ingredients: ["flour", "milk", "egg", "butter"],
+        cuisine: "American",
+        type: "Vegetarian",
+        image: "images/buttermilk-pancakes.jpg",
+        description: "Fluffy pancakes served with syrup and butter."
+    },
     // Add more adventurous recipes here following the same format
 ];
 
@@ -320,6 +433,7 @@ const recipes = [
     {
         name: "Sushi",
         ingredients: ["rice", "seaweed", "fish", "vegetables"],
+>>>>>>> ab8db3a923cf1916bf0264af2def014281170365
         cuisine: "Japanese",
         type: "Non-Vegetarian",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIObgM84rxP_9ETuDP0e2dgcPxOSsLT8sEeg&s",
@@ -720,7 +834,7 @@ function saveRecipe(recipe) {
         alert("Could not access saved recipes. LocalStorage might be disabled or full.");
         return; // Stop execution if localS
         // Add more adventurous recipes here following the same format
-    ];
+    };
     
     
     // Recipe Array with Images and Descriptions (Your main recipe data)
@@ -1012,6 +1126,7 @@ function saveRecipe(recipe) {
             image: "images/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
             description: "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
           },
+             f63df5b43f4996e05d1ce1d3257079f51815162
         {
           name: "Palak Paneer",
           ingredients: ["spinach", "paneer", "onion", "garlic", "ginger", "tomato", "green chili", "spices", "cream"],
