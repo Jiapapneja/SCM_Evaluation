@@ -725,7 +725,7 @@ function saveRecipe(recipe) {
         alert("Could not access saved recipes. LocalStorage might be disabled or full.");
         return; // Stop execution if localS
         // Add more adventurous recipes here following the same format
-    ];
+    };
     
     
     // Recipe Array with Images and Descriptions (Your main recipe data)
