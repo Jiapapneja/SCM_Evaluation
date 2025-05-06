@@ -4,8 +4,6 @@
 // You can add more recipes to this list following the same structure
 const adventurousRecipes = [
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
        name: "Eggplant Parmesan",
        ingredients: ["eggplant", "tomato sauce", "mozzarella cheese", "parmesan cheese", "breadcrumbs", "olive oil", "basil"],
        cuisine: "Italian",
@@ -433,7 +431,6 @@ const recipes = [
     {
         name: "Sushi",
         ingredients: ["rice", "seaweed", "fish", "vegetables"],
->>>>>>> ab8db3a923cf1916bf0264af2def014281170365
         cuisine: "Japanese",
         type: "Non-Vegetarian",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIObgM84rxP_9ETuDP0e2dgcPxOSsLT8sEeg&s",
@@ -1126,7 +1123,6 @@ function saveRecipe(recipe) {
             image: "images/Easy-Vegetable-Lasagna-Recipe-1200.jpg",
             description: "Layered pasta with vegetables, creamy ricotta, tomato sauce, and melted cheese, baked to perfection."
           },
-             f63df5b43f4996e05d1ce1d3257079f51815162
         {
           name: "Palak Paneer",
           ingredients: ["spinach", "paneer", "onion", "garlic", "ginger", "tomato", "green chili", "spices", "cream"],
