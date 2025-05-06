@@ -322,6 +322,11 @@ const recipes = [
         ingredients: ["rice", "seaweed", "fish", "vegetables"],
         cuisine: "Japanese",
         type: "Non-Vegetarian",
+
+        image: "images/chicken-katsu-curry.jpg", // Placeholder image path
+        description: "Crispy breaded chicken cutlet served with rich and savory Japanese curry sauce over rice."
+    },
+
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIObgM84rxP_9ETuDP0e2dgcPxOSsLT8sEeg&s",
         description: "Delicious sushi rolls made with rice and fresh ingredients."
     },
