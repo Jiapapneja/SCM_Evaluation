@@ -55,7 +55,7 @@ const adventurousRecipes = [
         type: "Non-Vegetarian",
         image: "images/chicken-katsu-curry.jpg", // Placeholder image path
         description: "Crispy breaded chicken cutlet served with rich and savory Japanese curry sauce over rice."
-    }
+    },
         // Add more adventurous recipes here following the same format
     ];
     
