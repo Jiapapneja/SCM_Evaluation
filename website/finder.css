@@ -52,7 +52,7 @@ body {
         opacity: 1; /* Fade to fully visible */
         transform: translateY(0); /* Move to its final position */
     }
-    
+
 }
 
 body::before {
@@ -152,23 +152,25 @@ header p {
 }
 
 /* Icon color when the respective button is ACTIVE */
-.cuisine-button.active[data-filter-value="vegetarian"] .icon.veg-icon {
+/* NOTE: These selectors target the cuisine buttons, not the new toggle buttons */
+.cuisine-button.active[data-cuisine="Veg"] .icon.veg-icon {
     background-color: var(--veg-icon-color);
     border-color: var(--veg-icon-color);
 }
 
-.cuisine-button.active[data-filter-value="non-vegetarian"] .icon.non-veg-icon {
+.cuisine-button.active[data-cuisine="Non-Veg"] .icon.non-veg-icon {
     background-color: var(--non-veg-icon-color);
     border-color: var(--non-veg-icon-color);
 }
 
 /* Remove border from icon when button is active */
 .cuisine-button.active .icon {
-      border: none;
+     border: none;
 }
 
-/* === Font Styling for Diet Buttons === */
-.cuisine-button[data-filter-type="diet"] {
+/* === Font Styling for Diet Buttons (in cuisine filters) === */
+.cuisine-button[data-cuisine="Veg"],
+.cuisine-button[data-cuisine="Non-Veg"] {
     font-family: var(--font-main);
 }
 
@@ -276,10 +278,10 @@ header p {
      opacity: 0; /* Start completely transparent */
      transform: translateY(20px); /* Start slightly below its final position */
      animation: fadeInRise 0.8s ease-out forwards; /* Apply the animation */
- }
- 
- /* --- Define the keyframes for the animation --- */
- @keyframes fadeInRise {
+}
+
+/* --- Define the keyframes for the animation --- */
+@keyframes fadeInRise {
      to {
          opacity: 1; /* Fade to fully visible */
          transform: translateY(0); /* Move to its final position */
@@ -333,6 +335,7 @@ header p {
 }
 
 #random-recipes-display #recipe-details p {
+    font-size: 0.9em; /* Match recipe card description font size */
     color: var(--text-color); /* Use your text color variable */
     margin-bottom: 10px;
     line-height: 1.5;
@@ -380,12 +383,15 @@ header p {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 15px; /* Space between items when wrapped */
 }
 
 .recipe-suggestions h2 {
     color: var(--primary-color);
     font-size: 1.8em;
     font-family: var(--font-main);
+    margin: 0; /* Remove default margin */
 }
 
 .results-count {
@@ -393,6 +399,41 @@ header p {
     font-size: 1em;
     font-family: var(--font-main);
 }
+
+/* --- NEW Styles for Veg/Non-Veg Toggle Buttons --- */
+.veg-nonveg-toggle {
+    display: flex; /* Arrange buttons in a row */
+    border: 1px solid var(--primary-color); /* Border around the toggle group */
+    border-radius: 20px; /* Rounded ends */
+    overflow: hidden; /* Hide overflow from rounded corners */
+}
+
+/* Style for individual toggle buttons */
+.veg-nonveg-toggle .toggle-btn {
+    padding: 8px 15px;
+    border: none; /* Remove individual button borders */
+    background-color: transparent; /* Default transparent background */
+    color: var(--text-color); /* Default text color */
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-main);
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Style for the active (selected) toggle button */
+.veg-nonveg-toggle .toggle-btn.active {
+    background-color: var(--primary-color); /* Brand color background for active */
+    color: var(--light-text); /* White text for active */
+    font-weight: bold;
+}
+
+/* Hover effect for toggle buttons (except active) */
+.veg-nonveg-toggle .toggle-btn:hover:not(.active) {
+    background-color: #f0f0f0; /* Light background on hover */
+}
+/* --- END NEW Styles --- */
+
 
 .recipe-grid {
     display: grid;
@@ -424,6 +465,8 @@ header p {
     transition: transform 0.3s;
     cursor: pointer;
     font-family: var(--font-main);
+    display: flex; /* Use flexbox for filtering display control */
+    flex-direction: column; /* Stack content vertically */
 }
 
 .recipe-card:hover {
@@ -498,6 +541,8 @@ header p {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for long text */
+    gap: 5px; /* Space between label and value if wrapped */
 }
 
 .detail-label {
@@ -506,6 +551,7 @@ header p {
     display: flex;
     align-items: center;
     gap: 5px;
+    flex-shrink: 0; /* Prevent label from shrinking */
 }
 
 #recipe-modal-ingredients {
@@ -630,4 +676,22 @@ header p {
         right: 20px;
         padding: 12px 20px;
     }
+     /* Adjust results header layout on small screens */
+    .results-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .results-header h2 {
+        margin-bottom: 5px;
+    }
+    .veg-nonveg-toggle {
+         width: 100%; /* Make toggle take full width */
+         justify-content: space-around; /* Distribute buttons */
+         border-radius: 10px; /* Adjust border radius for full width */
+    }
+     .veg-nonveg-toggle .toggle-btn {
+         flex-grow: 1; /* Allow buttons to grow and fill space */
+         text-align: center;
+     }
 }
