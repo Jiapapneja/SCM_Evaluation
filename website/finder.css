@@ -52,7 +52,6 @@ body {
         opacity: 1; /* Fade to fully visible */
         transform: translateY(0); /* Move to its final position */
     }
-
 }
 
 body::before {
@@ -152,7 +151,6 @@ header p {
 }
 
 /* Icon color when the respective button is ACTIVE */
-/* NOTE: These selectors target the cuisine buttons, not the new toggle buttons */
 .cuisine-button.active[data-cuisine="Veg"] .icon.veg-icon {
     background-color: var(--veg-icon-color);
     border-color: var(--veg-icon-color);
@@ -257,7 +255,6 @@ header p {
 }
 
 /* Style for the "Feeling adventurous?" button itself */
-/* Using the ID #adventurous-button to target the specific button */
 #adventurous-button {
     background-color: var(--surprise-button-color); /* Vibrant orange (using your variable) */
     border-color: var(--surprise-button-color-dark); /* Slightly darker orange border */
@@ -432,8 +429,6 @@ header p {
 .veg-nonveg-toggle .toggle-btn:hover:not(.active) {
     background-color: #f0f0f0; /* Light background on hover */
 }
-/* --- END NEW Styles --- */
-
 
 .recipe-grid {
     display: grid;
