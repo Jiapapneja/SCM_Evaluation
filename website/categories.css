@@ -1,7 +1,7 @@
 /* Categories Page Styles */
 .categories-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 3rem auto; /* Corrected margin */
     padding: 2rem 1rem;
     color: #333;
 }
@@ -37,10 +37,13 @@
     border-left: 4px solid #d32f2f;
 }
 
+/* Generic grid styles - Applies to all .category-grid elements */
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    /* THIS RULE SETS THE SIZE FOR ALL CARDS */
+    /* Adjust 250px here to make ALL cards (Cuisine, Dietary, Meal Types) larger or smaller */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem; /* Controls space between cards */
     padding: 0 1rem;
 }
 
@@ -51,7 +54,9 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1; /* Keeps the card square */
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
 }
 
 .category-card:hover {
@@ -62,7 +67,7 @@
 .category-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image covers the card area */
     display: block;
 }
 
@@ -77,6 +82,7 @@
     transition: all 0.3s ease;
 }
 
+/* Default hover style for the overlay */
 .category-card:hover .category-overlay {
     padding-bottom: 1.5rem;
     background: linear-gradient(to top, rgba(211, 47, 47, 0.9), transparent);
@@ -95,8 +101,9 @@
 
 /* Responsive Design */
 @media (max-width: 992px) {
+    /* Size for ALL grids on medium screens */
     .category-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Keep consistent */
     }
 }
 
@@ -104,11 +111,11 @@
     .categories-intro h2 {
         font-size: 2rem;
     }
-    
+
     .category-section h3 {
         font-size: 1.6rem;
     }
-    
+
     .category-overlay h4 {
         font-size: 1.2rem;
     }
@@ -118,34 +125,53 @@
     .category-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .categories-intro h2 {
         font-size: 1.8rem;
     }
-    
+
     .category-overlay {
         padding: 1rem 0.8rem 0.8rem;
     }
-    
+
     .category-card:hover .category-overlay {
         padding-bottom: 1rem;
     }
 }
 
-/* Animation for category cards */
+/* Animation delay for individual cards */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-.category-card {
-    animation: fadeIn 0.5s ease forwards;
-    opacity: 0;
-}
-
+/* Apply staggered animation effect */
 .category-card:nth-child(1) { animation-delay: 0.1s; }
 .category-card:nth-child(2) { animation-delay: 0.2s; }
 .category-card:nth-child(3) { animation-delay: 0.3s; }
 .category-card:nth-child(4) { animation-delay: 0.4s; }
 .category-card:nth-child(5) { animation-delay: 0.5s; }
 .category-card:nth-child(6) { animation-delay: 0.6s; }
+.category-card:nth-child(7) { animation-delay: 0.7s; }
+.category-card:nth-child(8) { animation-delay: 0.8s; }
+.category-card:nth-child(9) { animation-delay: 0.9s; }
+
+
+/* === Styles specific to the third category section (Meal Types) === */
+/* Keep these if you want visual distinction other than size */
+.category-section:nth-of-type(3) .category-grid .category-card {
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-section:nth-of-type(3) .category-grid .category-card:hover .category-overlay {
+     background: linear-gradient(to top, rgba(255, 152, 0, 0.9), transparent);
+}
+
+.category-section:nth-of-type(3) .category-grid .category-card:hover {
+     border-color: rgba(255, 152, 0, 0.6);
+}
+
+.category-section:nth-of-type(3) .category-grid .category-overlay h4 {
+     font-weight: 700;
+}
