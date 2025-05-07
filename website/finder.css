@@ -181,21 +181,27 @@ header p {
     max-width: 800px;
 }
 
+/* Modified: Added align-items and flex-wrap */
 .search-container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; /* Keep this or change based on desired alignment */
+    align-items: center; /* Vertically align items in the center */
     gap: 10px;
     margin-bottom: 15px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    /* Keep other existing styles */
 }
 
 #search-bar {
     padding: 12px 15px;
-    width: 300px;
+    /* Remove fixed width if using flex-grow */
+    /* width: 300px; */
     border: 2px solid var(--primary-color);
     border-radius: var(--border-radius);
     outline: none;
     font-size: 1em;
     font-family: var(--font-main);
+    flex-grow: 1; /* Added: Allow search bar to take up available space */
 }
 
 #search-bar:focus {
@@ -215,6 +221,7 @@ header p {
     gap: 8px;
     transition: all 0.3s;
     font-family: var(--font-main);
+    white-space: nowrap; /* Prevent button text from wrapping */
 }
 
 #search-button:hover, #clear-button:hover {
@@ -256,9 +263,9 @@ header p {
 
 /* Style for the "Feeling adventurous?" button itself */
 #adventurous-button {
-    background-color: var(--surprise-button-color); /* Vibrant orange (using your variable) */
-    border-color: var(--surprise-button-color-dark); /* Slightly darker orange border */
-    color: var(--light-text); /* White text (using your variable) */
+    background-color: var(--surprise-button-color);
+    border-color: var(--surprise-button-color-dark);
+    color: var(--light-text);
     font-weight: bold;
     padding: 12px 25px;
     border-radius: 30px;
@@ -266,41 +273,34 @@ header p {
     transition: all 0.3s ease;
     cursor: pointer;
     border: none;
-    display: inline-block; /* Use inline-block for text-align: center on parent */
-    font-family: var(--font-main); /* Use your main font variable */
+    display: inline-block;
+    font-family: var(--font-main);
     font-size: 1em;
     white-space: nowrap;
-    text-decoration: none; /* Remove underline if it were an anchor tag */
-     /* --- Added Animation Properties --- */
-     opacity: 0; /* Start completely transparent */
-     transform: translateY(20px); /* Start slightly below its final position */
-     animation: fadeInRise 0.8s ease-out forwards; /* Apply the animation */
+    text-decoration: none;
+     opacity: 0;
+     transform: translateY(20px);
+     animation: fadeInRise 0.8s ease-out forwards;
 }
 
-/* --- Define the keyframes for the animation --- */
-@keyframes fadeInRise {
-     to {
-         opacity: 1; /* Fade to fully visible */
-         transform: translateY(0); /* Move to its final position */
-     }
-}
+/* Keyframes are defined globally above body */
 
 #adventurous-button:hover {
-    background-color: var(--surprise-button-color-dark); /* Darker orange on hover */
-    transform: translateY(-3px); /* Lift the button slightly */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+    background-color: var(--surprise-button-color-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 #adventurous-button:active {
-    background-color: var(--surprise-button-color-active); /* Even darker orange when clicked */
-    transform: translateY(0); /* Push button down slightly */
-    box-shadow: 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow when active */
+    background-color: var(--surprise-button-color-active);
+    transform: translateY(0);
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Style for the temporary "Surprise Me!" message */
 #surprise-message {
     font-size: 2em;
-    color: var(--surprise-button-color); /* Match the button color */
+    color: var(--surprise-button-color);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -308,41 +308,41 @@ header p {
 
 /* Style for the container that will display the random recipe */
 #random-recipes-display {
-    width: 90%; /* Adjust width as needed */
-    max-width: 600px; /* Max width for larger screens */
-    background-color: var(--card-bg); /* Use your card background color variable */
+    width: 90%;
+    max-width: 600px;
+    background-color: var(--card-bg);
     padding: 20px;
-    border-radius: var(--border-radius); /* Use your border radius variable */
-    box-shadow: var(--shadow); /* Use your shadow variable */
-    margin: 20px auto; /* Center the display block */
-    text-align: left; /* Align text content to the left */
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin: 20px auto;
+    text-align: left;
 }
 
 #random-recipes-display h2 {
-    color: var(--primary-color); /* Use your primary color variable */
+    color: var(--primary-color);
     margin-top: 0;
     margin-bottom: 15px;
-    text-align: center; /* Center the heading */
+    text-align: center;
 }
 
 /* Styling for the recipe details within the display area */
 #random-recipes-display #recipe-details h3 {
-     color: var(--text-color); /* Use your text color variable */
+     color: var(--text-color);
      margin-bottom: 10px;
 }
 
 #random-recipes-display #recipe-details p {
-    font-size: 0.9em; /* Match recipe card description font size */
-    color: var(--text-color); /* Use your text color variable */
+    font-size: 0.9em;
+    color: var(--text-color);
     margin-bottom: 10px;
     line-height: 1.5;
 }
 
 #random-recipes-display #recipe-details ul {
-    list-style: disc; /* Use bullet points for ingredients */
+    list-style: disc;
     padding-left: 20px;
     margin-bottom: 10px;
-    color: var(--text-color); /* Use your text color variable */
+    color: var(--text-color);
 }
 
 /* Utility class to hide elements */
@@ -375,20 +375,21 @@ header p {
     padding: 20px;
 }
 
+/* Keep these styles for the results header itself */
 .results-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 15px; /* Space between items when wrapped */
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .recipe-suggestions h2 {
     color: var(--primary-color);
     font-size: 1.8em;
     font-family: var(--font-main);
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 .results-count {
@@ -397,37 +398,39 @@ header p {
     font-family: var(--font-main);
 }
 
-/* --- NEW Styles for Veg/Non-Veg Toggle Buttons --- */
+/* Styles for Veg/Non-Veg Toggle Buttons group */
 .veg-nonveg-toggle {
-    display: flex; /* Arrange buttons in a row */
-    border: 1px solid var(--primary-color); /* Border around the toggle group */
-    border-radius: 20px; /* Rounded ends */
-    overflow: hidden; /* Hide overflow from rounded corners */
+    display: flex;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    overflow: hidden;
+    /* Remove any margin that might have been used to position it in the results header */
+    /* margin-top: 0; */
 }
 
 /* Style for individual toggle buttons */
 .veg-nonveg-toggle .toggle-btn {
     padding: 8px 15px;
-    border: none; /* Remove individual button borders */
-    background-color: transparent; /* Default transparent background */
-    color: var(--text-color); /* Default text color */
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
     font-size: 0.9em;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: var(--font-main);
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap;
 }
 
 /* Style for the active (selected) toggle button */
 .veg-nonveg-toggle .toggle-btn.active {
-    background-color: var(--primary-color); /* Brand color background for active */
-    color: var(--light-text); /* White text for active */
+    background-color: var(--primary-color);
+    color: var(--light-text);
     font-weight: bold;
 }
 
 /* Hover effect for toggle buttons (except active) */
 .veg-nonveg-toggle .toggle-btn:hover:not(.active) {
-    background-color: #f0f0f0; /* Light background on hover */
+    background-color: #f0f0f0;
 }
 
 .recipe-grid {
@@ -460,8 +463,8 @@ header p {
     transition: transform 0.3s;
     cursor: pointer;
     font-family: var(--font-main);
-    display: flex; /* Use flexbox for filtering display control */
-    flex-direction: column; /* Stack content vertically */
+    display: flex;
+    flex-direction: column;
 }
 
 .recipe-card:hover {
@@ -487,6 +490,7 @@ header p {
     font-size: 0.9em;
     color: var(--text-color);
     margin-bottom: 5px;
+    line-height: 1.5;
     font-family: var(--font-main);
 }
 
@@ -536,8 +540,8 @@ header p {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping for long text */
-    gap: 5px; /* Space between label and value if wrapped */
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .detail-label {
@@ -546,7 +550,7 @@ header p {
     display: flex;
     align-items: center;
     gap: 5px;
-    flex-shrink: 0; /* Prevent label from shrinking */
+    flex-shrink: 0;
 }
 
 #recipe-modal-ingredients {
@@ -648,13 +652,17 @@ header p {
         font-size: 1em;
     }
 
-    .search-container {
-        flex-direction: column;
-        align-items: center;
-    }
+    /* Keep the search container flex direction column on small screens */
+     .search-container {
+         flex-direction: column;
+         align-items: center; /* Center items horizontally in column layout */
+         gap: 10px; /* Adjust gap if needed */
+     }
+
 
     #search-bar {
         width: 100%;
+        /* Ensure search bar takes full width in column layout */
     }
 
     .recipe-grid {
@@ -671,7 +679,8 @@ header p {
         right: 20px;
         padding: 12px 20px;
     }
-     /* Adjust results header layout on small screens */
+
+    /* Keep results header layout as desired on small screens */
     .results-header {
         flex-direction: column;
         align-items: flex-start;
@@ -680,13 +689,17 @@ header p {
     .results-header h2 {
         margin-bottom: 5px;
     }
-    .veg-nonveg-toggle {
-         width: 100%; /* Make toggle take full width */
-         justify-content: space-around; /* Distribute buttons */
-         border-radius: 10px; /* Adjust border radius for full width */
+
+    /* Modified: Adjust toggle button layout when wrapped within search-container on small screens */
+    .search-container .veg-nonveg-toggle {
+        width: 100%; /* Make toggle take full width when wrapped */
+        justify-content: space-around; /* Distribute buttons */
+        border-radius: 10px; /* Adjust border radius */
     }
-     .veg-nonveg-toggle .toggle-btn {
-         flex-grow: 1; /* Allow buttons to grow and fill space */
-         text-align: center;
-     }
+    .search-container .veg-nonveg-toggle .toggle-btn {
+        flex-grow: 1; /* Allow buttons to grow */
+        text-align: center;
+    }
+
+    /* Removed the old responsive styles targeting veg-nonveg-toggle inside results-header */
 }
