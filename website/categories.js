@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         yearElement.textContent = new Date().getFullYear();
     }
 
-    // Category filtering functions (These functions handle the navigation)
+   
     function filterByCuisine(cuisine) {
         // Save the filter to localStorage
         localStorage.setItem('categoryFilter', JSON.stringify({

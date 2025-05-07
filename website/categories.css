@@ -37,7 +37,7 @@
     border-left: 4px solid #d32f2f;
 }
 
-/* Generic grid styles - Applies to all .category-grid elements */
+
 .category-grid {
     display: grid;
     /* THIS RULE SETS THE SIZE FOR ALL CARDS */
