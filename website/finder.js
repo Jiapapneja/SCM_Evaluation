@@ -102,11 +102,10 @@ const adventurousRecipes = [
         image: "images/Eitan-Bernath-Chicken-Korma--819x1024.jpg",
         description: "A rich and flavorful chicken curry cooked in a creamy yogurt-based sauce with aromatic spices."
       },
-   
-=======
+{
         name: "Chicken Katsu Curry",
         ingredients: ["chicken breast", "flour", "egg", "breadcrumbs (panko)", "oil for frying", "Japanese curry roux", "onion", "carrot", "potato", "rice"],
-=======
+
         name: "Spicy Peanut Noodles",
         ingredients: ["noodles", "peanut butter", "soy sauce", "rice vinegar", "sesame oil", "garlic", "ginger", "chili flakes", "vegetables (e.g., bell peppers, carrots)", "optional: chicken or tofu"],
         cuisine: "Asian-inspired",
