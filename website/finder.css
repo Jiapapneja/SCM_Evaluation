@@ -131,25 +131,6 @@ header p {
     border: none;
 }
 
-/* === Icon Styling === */
-.cuisine-button .icon {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-right: 8px;
-    background-color: grey; /* Default grey color */
-    border: 1px solid #ccc;
-    flex-shrink: 0;
-}
-
-.cuisine-button .icon.veg-icon {
-    border-radius: 50%; /* Circle shape for Veg */
-}
-
-.cuisine-button .icon.non-veg-icon {
-    border-radius: 2px; /* Square shape for Non-Veg */
-}
-
 /* Icon color when the respective button is ACTIVE */
 .cuisine-button.active[data-cuisine="Veg"] .icon.veg-icon {
     background-color: var(--veg-icon-color);
@@ -164,12 +145,6 @@ header p {
 /* Remove border from icon when button is active */
 .cuisine-button.active .icon {
      border: none;
-}
-
-/* === Font Styling for Diet Buttons (in cuisine filters) === */
-.cuisine-button[data-cuisine="Veg"],
-.cuisine-button[data-cuisine="Non-Veg"] {
-    font-family: var(--font-main);
 }
 
 

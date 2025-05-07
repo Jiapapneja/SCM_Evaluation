@@ -1078,44 +1078,37 @@ document.addEventListener("DOMContentLoaded", function() {
     // Cuisine filter buttons
     cuisineButtons.forEach(button => {
         button.addEventListener('click', function() {
+            // Remove active class from all cuisine buttons
             cuisineButtons.forEach(btn => {
                 btn.classList.remove('active');
             });
+            // Add active class to clicked cuisine button
             this.classList.add('active');
+
             const cuisineFilterValue = this.getAttribute('data-cuisine');
-            const currentSearch = document.getElementById("search-bar").value;
 
             // --- MODIFIED LOGIC ---
-            if (cuisineFilterValue === 'Veg' || cuisineFilterValue === 'Non-Veg') {
-                const targetFilterType = cuisineFilterValue === 'Veg' ? 'vegetarian' : 'non-vegetarian';
-                const targetToggleButton = document.querySelector(`.veg-nonveg-toggle .toggle-btn[data-filter-type="${targetFilterType}"]`);
+            // This is the logic that remains, filtering by the selected cuisine
+            // and the currently active dietary filter from the toggle.
+            const activeToggleBtn = document.querySelector('.veg-nonveg-toggle .toggle-btn.active');
+            const currentDietaryFilter = activeToggleBtn ? activeToggleBtn.getAttribute('data-filter-type') : 'all';
 
-                if (targetToggleButton) {
-                    toggleButtons.forEach(btn => btn.classList.remove('active'));
-                    targetToggleButton.classList.add('active');
-                    const activeCuisineButton = document.querySelector('.cuisine-button.active:not([data-cuisine="Veg"]):not([data-cuisine="Non-Veg"])');
-                    const currentCuisine = activeCuisineButton ? activeCuisineButton.getAttribute('data-cuisine') : 'all';
-                    filterRecipesByCuisineAndDiet(currentCuisine, targetFilterType);
-                     if (!activeCuisineButton && document.querySelector('.cuisine-button[data-cuisine="all"]')) {
-                          document.querySelectorAll('.cuisine-button.active[data-cuisine="Veg"], .cuisine-button.active[data-cuisine="Non-Veg"]').forEach(btn => btn.classList.remove('active'));
-                          document.querySelector('.cuisine-button[data-cuisine="all"]').classList.add('active');
-                      }
-                } else {
-                    console.warn(`Corresponding toggle button for data-cuisine="${cuisineFilterValue}" not found.`);
-                     const currentCuisine = 'all';
-                     filterRecipesByCuisineAndDiet(currentCuisine, targetFilterType);
-                }
-            } else {
-                const activeToggleBtn = document.querySelector('.veg-nonveg-toggle .toggle-btn.active');
-                const currentDietaryFilter = activeToggleBtn ? activeToggleBtn.getAttribute('data-filter-type') : 'all';
-                filterRecipesByCuisineAndDiet(cuisineFilterValue, currentDietaryFilter);
-            }
+            // We still need the current search bar value for ingredient filtering
+            const currentSearchQuery = document.getElementById("search-bar").value;
+
+            // Call the main filter function with the selected filters and search query
+            filterRecipesByCuisineAndDiet(cuisineFilterValue, currentDietaryFilter, currentSearchQuery);
+
             // --- END MODIFIED LOGIC ---
 
+
+             // Hide adventurous content when filtering
              if (randomRecipesDisplay) randomRecipesDisplay.classList.add('hidden');
              if (surpriseMessage) surpriseMessage.classList.add('hidden');
              if (adventurousButton) adventurousButton.style.display = 'inline-block';
              if (recipeGrid) { recipeGrid.classList.remove('hidden'); }
+
+              // Show the Veg/Non-Veg toggle
               const vegNonVegToggle = document.querySelector('.veg-nonveg-toggle');
               if (vegNonVegToggle) {
                   vegNonVegToggle.classList.remove('hidden');
