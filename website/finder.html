@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="finder.css">
     <title>Snapdish</title>
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -34,26 +33,33 @@
             <button id="clear-button">
                 <i class="fas fa-times"></i> Clear
             </button>
-        </div>
+
+            <div class="veg-nonveg-toggle">
+                <button class="toggle-btn active" data-filter-type="all">All</button>
+                <button class="toggle-btn" data-filter-type="vegetarian">Veg</button>
+                <button class="toggle-btn" data-filter-type="non-vegetarian">Non-Veg</button>
+            </div>
+            </div>
+
         <div class="button-container">
             <button id="adventurous-button">
                 Feeling adventurous?
             </button>
         </div>
-        
+
         <div id="surprise-message" class="hidden">
             Surprise Me!
         </div>
-        
+
         <div id="random-recipes-display" class="hidden">
             <h2>Your Adventurous Recipe:</h2>
             <div id="recipe-details">
                 </div>
         </div>
     </div>
-    
+
     <div class="loader" id="loader" style="display: none;"></div>
-    
+
     <div class="recipe-suggestions">
         <div class="results-header">
             <h2>Search Results</h2>
@@ -67,7 +73,6 @@
         </div>
     </div>
 
-    <!-- Recipe Modal -->
     <div id="recipe-modal" class="modal">
         <div class="modal-content">
             <span id="close-modal" class="close-btn">&times;</span>
@@ -81,6 +86,10 @@
                     <span class="detail-label"><i class="fas fa-globe"></i> Cuisine:</span>
                     <span id="recipe-modal-cuisine"></span>
                 </div>
+                 <div class="detail-row">
+                    <span class="detail-label"><i class="fas fa-leaf"></i> Type:</span>
+                    <span id="recipe-modal-type"></span>
+                </div>
                 <div class="detail-row">
                     <span class="detail-label"><i class="fas fa-clipboard-list"></i> Ingredients:</span>
                     <ul id="recipe-modal-ingredients"></ul>
@@ -92,7 +101,6 @@
         </div>
     </div>
 
-    <!-- Saved Recipes Modal -->
     <div id="saved-modal" class="modal">
         <div class="modal-content">
             <span id="close-saved-modal" class="close-btn">&times;</span>
@@ -103,7 +111,6 @@
         </div>
     </div>
 
-    <!-- View Saved Button -->
     <button id="view-saved" class="floating-button">
         <i class="fas fa-bookmark"></i> Saved Recipes
     </button>
@@ -111,5 +118,3 @@
     <script src="finder.js"></script>
 </body>
 </html>
-
-
