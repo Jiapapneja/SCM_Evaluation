@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animate stats counting
+    
     const statNumbers = document.querySelectorAll('.stat-number');
     const animationDuration = 2000; // 2 seconds
     const frameDuration = 1000 / 60; // 60fps
