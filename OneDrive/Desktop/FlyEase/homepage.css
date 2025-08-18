@@ -148,3 +148,10 @@ footer {
 .footer-links { display: flex; gap: 16px; }
 .footer-links a { color: var(--white); text-decoration: none; transition: color 0.3s; }
 .footer-links a:hover { color: var(--brown-light); }
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .search-form { grid-template-columns: 1fr 1fr; }
+  .cards, .tiles { grid-template-columns: 1fr; }
+  .portal-grid { grid-template-columns: 1fr; }
+}
