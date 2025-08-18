@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlyEase – Flight Scheduling & Passenger Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+   <!-- HEADER -->
+   
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">FlyEase</a>
+      <nav class="nav-links">
+        <a href="#search">Book</a>
+        <a href="#schedule">Schedules</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#portal">Passenger Portal</a>
+        <a class="cta" href="#">Check-in</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+<section class="hero">
+  <video autoplay muted loop id="video-bg">
+    <source src="assets/airplane.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>Your Journey, Our Priority</h1>
+    <p>Book, manage, and fly with ease. Experience travel the modern way.</p>
+    <a href="#search" class="btn primary">Search Flights</a>
+  </div>
+</section>
+
+
+  <!-- SEARCH BOX -->
+  <section id="search" class="search-section">
+    <div class="container">
+      <div class="tabs">
+        <span class="tab active">One Way</span>
+        <span class="tab">Round Trip</span>
+        <span class="tab">Multi-City</span>
+      </div>
+      <form class="search-form">
+        <div class="field">
+          <label>From</label>
+          <input type="text" placeholder="Origin">
+        </div>
+        <div class="field">
+          <label>To</label>
+          <input type="text" placeholder="Destination">
+        </div>
+        <div class="field">
+          <label>Depart</label>
+          <input type="date">
+        </div>
+        <div class="field">
+          <label>Return</label>
+          <input type="date">
+        </div>
+        <div class="field">
+          <label>Passengers</label>
+          <select><option>1 Adult</option><option>2 Adults</option></select>
+        </div>
+        <div class="field">
+          <label>Class</label>
+          <select><option>Economy</option><option>Business</option></select>
+        </div>
+        <button class="btn primary">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SCHEDULES -->
+  <section id="schedule" class="section">
+    <div class="container">
+      <h2>Today's Flights</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Mumbai → Delhi</h3>
+          <p>On-Time • 06:20 - 08:30</p>
+        </div>
+        <div class="card">
+          <h3>Delhi → Bengaluru</h3>
+          <p>Delayed 20m • 09:10 - 11:55</p>
+        </div>
+        <div class="card">
+          <h3>Bengaluru → Goa</h3>
+          <p>Boarding • 12:40 - 14:10</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="section">
+    <div class="container">
+      <h2>Trending Destinations</h2>
+      <div class="tiles">
+        <div class="tile">
+          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1400&auto=format&fit=crop" alt="">
+          <div class="caption">Mumbai</div>
+        </div>
+        <div class="tile">
+          <img src="https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=1400&auto=format&fit=crop" alt="">
+          <div class="caption">Delhi</div>
+        </div>
+        <div class="tile">
+          <img src="https://images.unsplash.com/photo-1546387903-6d82d299a7e7?q=80&w=1400&auto=format&fit=crop" alt="">
+          <div class="caption">Bengaluru</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAL -->
+  <section id="portal" class="section portal">
+    <div class="container portal-grid">
+      <div>
+        <h2>Passenger Portal</h2>
+        <p>Manage trips, download passes, get live updates.</p>
+        <ul class="features">
+          <li>🧳 Trip Locker</li>
+          <li>🔔 Live Alerts</li>
+          <li>🌿 Greener Options</li>
+        </ul>
+      </div>
+      <aside class="login">
+        <h3>Sign in</h3>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="btn primary">Login</button>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot">
+      <p>© 2025 FlyEase Airways</p>
+      <nav class="footer-links">
+        <a href="#">Help</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
